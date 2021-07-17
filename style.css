@@ -1,0 +1,23 @@
+body {
+	font-family: "Poppins", sans-serif;
+	color: #eef0f2;
+	margin: 0 auto;
+}
+
+.navbar-lewagon {
+	justify-content: space-between;
+	background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+	flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+	width: 40px;
+}
+
+.avatar {
+	width: 40px;
+	border-radius: 50%;
+}
