@@ -16,3 +16,12 @@ body {
 .book-clean {
 	width: 50vw !important;
 }
+
+@media (min-width: 844px) {
+	.navbar-toggler {
+		display: none !important;
+	}
+	#navbarText {
+		display: none !important;
+	}
+}
