@@ -14,7 +14,7 @@ body {
 }
 
 .book-clean {
-	width: 50vw !important;
+	width: 57vw !important;
 }
 
 @media (min-width: 844px) {
@@ -24,4 +24,15 @@ body {
 	#navbarText {
 		display: none !important;
 	}
+}
+
+.book {
+	font-size: 18px !important;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+}
+
+.top-btn {
+	border-radius: 5px;
+	white-space: nowrap;
 }
