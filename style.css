@@ -57,9 +57,15 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333333;
+	background-color: #f15209;
+	color: white !important;
 }
 
+.nav-link:hover {
+	background-color: #ec9972 !important;
+}
+
+/* leaving this because I have no idea what happens if its removed */
 li {
 	float: left;
 }
@@ -86,4 +92,11 @@ ul.big-nav {
 	padding-top: 75px;
 	display: flex;
 	justify-content: space-around;
+}
+
+@media (max-width: 844px) {
+	/* mobile CSS: hide .desktop div */
+	.big-nav {
+		display: none !important;
+	}
 }
