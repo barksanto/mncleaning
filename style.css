@@ -59,6 +59,7 @@ ul {
 	overflow: hidden;
 	background-color: #f15209;
 	color: white !important;
+	margin-top: 5px !important;
 }
 
 .nav-link:hover {
@@ -94,6 +95,7 @@ ul.big-nav {
 	justify-content: space-around;
 }
 
+/* hide big nav on small screens */
 @media (max-width: 844px) {
 	/* mobile CSS: hide .desktop div */
 	.big-nav {
