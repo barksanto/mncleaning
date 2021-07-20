@@ -80,3 +80,10 @@ li a:hover {
 	position: absolute !important;
 	width: 100vw;
 }
+
+ul.big-nav {
+	display: block;
+	padding-top: 75px;
+	display: flex;
+	justify-content: space-around;
+}
