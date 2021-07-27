@@ -110,24 +110,46 @@
         <div class="row">
           <form id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
             <div id="page-1" class="form-page-1">
+              <label>Zip Code:</label>
+              <input type="number" name="zip" />
               <label>Email:</label>
               <input type="email" name="email" />
-              <label>Message:</label>
-              <input type="text" name="message" />
-              <!-- <button id="my-form-button">Submit</button> -->
-              <button id="next-1">Next</button>
+              <label>First name:</label>
+              <input type="text" name="first-name" />
+              <label>Last name:</label>
+              <input type="text" name="last-name" />
+              <label>Phone number:</label>
+              <input type="number" name="phone" />
+              <button id="my-form-button" class="d-none">Submit</button>
+              <p id="next-1">Next</p>
               <p id="my-form-status"></p>
             </div>
             <div id="page-2" class="form-page-2 d-none">
-              <label>Email:</label>
-              <input type="email" name="email" />
-              <label>Message:</label>
-              <input type="text" name="message" />
-              <!-- <button id="my-form-button">Submit</button> -->
+            <label>Square feet:</label>
+            <input type="text" name="size" />
+            <label>Bedrooms:</label>
+            <input type="number" name="bedrooms" />
+            <label>Bathrooms:</label>
+            <input type="number" name="bathrooms" />
+              <button id="my-form-button" class="d-none">Submit</button>
               <button id="next-2">Next</button>
+              <button id="back-2">Back</button>
               <p id="my-form-status"></p>
             </div>
+            <div id="page-3" class="form-page-3 d-none">
+              <label>How often would you like your place cleaned?:</label>
+              <input type="text" name="frequency" />
+
+              <label>Routing or Deep Clean?:</label>
+              <input type="text" name="type-of-clean" />
+
             
+              <button id="next-3">Next</button>
+              <button id="my-form-button">Submit</button>
+
+              <button id="back-3">Back</button>
+              <p id="my-form-status"></p>
+            </div>
           </form>
         </div>
         
@@ -140,6 +162,7 @@
       
     
     <script src="./index.js" async defer></script>
+    <script src="./form.js" async defer></script>
   </body>
 </html>
 

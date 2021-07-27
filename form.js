@@ -1,0 +1,70 @@
+  // handlesubmit
+  var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+
+    form.addEventListener("submit", handleSubmit)
+
+// HANDLE NEXT
+
+
+//form pages
+const page1 = document.getElementById('page-1');
+const page2 = document.getElementById('page-2');
+const page3 = document.getElementById('page-3');
+
+// next buttons
+let next1 = document.getElementById('next-1');
+let next2 = document.getElementById('next-2');
+let next3 = document.getElementById('next-3');
+
+//back buttons
+
+
+let formPageCount = 1;
+// event listeners to +/- 
+let nextBtns = [next1, next2, next3]
+
+nextBtns.forEach(btn => {
+  btn.addEventListener('click', ()=>{
+  formPageCount +=1
+  checkPage()
+  console.log(formPageCount)
+})
+})
+
+
+function checkPage(){
+  switch(formPageCount) {
+  case 1:
+    break;
+  case 2:
+    page1.classList.add('d-none')
+    page2.classList.remove('d-none')
+    break;
+  case 3:
+    page2.classList.add('d-none')
+    page3.classList.remove('d-none')
+    break;
+  default:
+    // code block
+    console.log('default code block')
+}
+}
+
