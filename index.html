@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./menuNav.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -108,19 +109,38 @@
           </div>
         </div>
         <div class="row">
-          <form id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
-            <div id="page-1" class="form-page-1">
-              <label>Zip Code:</label>
-              <input type="number" name="zip" />
+          <form class="col-12" id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
+            <div id="page-1" class="form-page-1 row justify-content-center">
+              <div class="col-sm-5 col-md-4">
+                  <label>Zip Code:</label>
+                  <input type="number" name="zip" />
+              </div>  
+              <div class="col-sm-5 col-md-4">
               <label>Email:</label>
               <input type="email" name="email" />
-              <label>First name:</label>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <label>First name:</label>
               <input type="text" name="first-name" />
-              <label>Last name:</label>
+              </div>
+              
+              <div class="col-sm-5 col-md-4">
+                <label>Last name:</label>
               <input type="text" name="last-name" />
-              <label>Phone number:</label>
+              </div>
+              
+              <div class="col-sm-5 col-md-4">
+                <label>Phone number:</label>
               <input type="number" name="phone" />
-              <p id="next-1">Next</p>
+              </div>
+              
+              <div class="col-12">
+                <div class="row justify-content-center">
+                    <p id="next-1">Next</p>
+                </div>
+                
+              </div>
+              
               <!-- <p id="my-form-status"></p> -->
             </div>
             <div id="page-2" class="form-page-2 d-none">
