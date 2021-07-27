@@ -5,6 +5,9 @@
       event.preventDefault();
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
+
+      console.log(data)
+
       fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -28,6 +31,7 @@
 const page1 = document.getElementById('page-1');
 const page2 = document.getElementById('page-2');
 const page3 = document.getElementById('page-3');
+const page4 = document.getElementById('page-4');
 
 // next buttons
 let next1 = document.getElementById('next-1');
@@ -61,6 +65,10 @@ function checkPage(){
   case 3:
     page2.classList.add('d-none')
     page3.classList.remove('d-none')
+    break;
+  case 4:
+    page3.classList.add('d-none')
+    page4.classList.remove('d-none')
     break;
   default:
     // code block
