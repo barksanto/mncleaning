@@ -110,18 +110,17 @@
         </div>
         <div id="form" class="row">
           <form class="col-12" id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
+            
             <div id="page-1" class="form-page-1 row justify-content-center">
 
               <div class="col-sm-5 col-md-4">
-
                   <label >Zip Code:</label>
                   <input type="number" name="zip" />
-
               </div>  
 
               <div class="col-sm-5 col-md-4">
-              <label>Email:</label>
-              <input type="email" name="email" />
+                <label>Email:</label>
+                <input type="email" name="email" />
               </div>
 
               <div class="col-sm-5 col-md-4">
@@ -141,12 +140,14 @@
               
               <div class="col-12">
                 <div class="row justify-content-center">
-                    <p id="next-1">Next</p>
+                    <div class="col-8 text-right"><p >Step 1 of 4</p></div>
+                    <div class="col-4 text-center"><p id="next-1" class="next-btn">Next</p></div>
                 </div>
               </div>
               
               <!-- <p id="my-form-status"></p> -->
             </div>
+
             <div id="page-2" class="form-page-2 d-none row justify-content-center">
               <div class="col-sm-5 col-md-4">
                 <label>Square feet:</label>
@@ -163,20 +164,16 @@
                 <input type="text" name="bathrooms" />
               </div>
 
-            
-
-           
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <p id="next-2">Next</p>
-                  <p id="back-2">Back</p>
+                  <div class="col-5 text-right"><p>Step 2 of 4</p></div>
+                  <div class="col-4 text-right"><p id="back-2">Back</p></div>
+                  <div class="col-3"><p id="next-2" class="next-btn text-center">Next</p></div>
                 </div>
               </div>
-            
-
               
-              <!-- <p id="my-form-status"></p> -->
             </div>
+
             <div id="page-3" class="form-page-3 d-none row justify-content-center">
 
               <div class="col-sm-5 col-md-4">
@@ -189,25 +186,38 @@
                 <input type="text" name="type-of-clean" />
               </div>
 
-
             <div class="col-12">
               <div class="row justify-content-center">
-                  <p id="next-3">Next</p>
-                  <p id="back-3">Back</p>
-                  <p id="my-form-status"></p>
+                <div class="col-5 text-right"><p>Step 3 of 4</p></div>
+                <div class="col-4 text-right"><p id="back-3">Back</p></div>
+                <div class="col-3 next-btn"><p id="next-3" class="next-btn text-center">Next</p></div>
+                <p id="my-form-status"></p>
               </div>
             </div>
               
             </div>
+
             <div id="page-4" class="form-page-4 d-none">
-              <label>Pick any add-ons you would like:</label>
-              <input type="text" name="add-ons" />
+
+              <div class="col-sm-5 col-md-4">
+                <label>Pick any add-ons you would like:</label>
+                <input type="text" name="add-ons" />
+              </div>
+
+              <div class="col-12">
+                <div class="row justify-content-center">
+                  <div class="col-6"><p id="back-4">Back</p></div>
+                  <div class="col-6"><button id="my-form-button">Submit</button></div>
+                
+                </div>
+              </div>
             
-        
-              <p id="back-4">Back</p>
-              <button id="my-form-button">Submit</button>
-              <p id="my-form-status"></p>
+              
+              
+              
+              
             </div>
+
           </form>
         </div>
         

@@ -1,9 +1,11 @@
 #my-form {
-	background-color: lightcoral;
+	background-color: white;
 	display: flex;
 	justify-content: center;
 	max-width: 80vw;
 	margin: 0 auto;
+	border-radius: 8px;
+	border: 3px solid #e2e8f0;
 }
 
 input {
@@ -17,4 +19,12 @@ input {
 	label {
 		display: block !important;
 	}
+}
+
+/* next button styling */
+.next-btn:first-child {
+	border: 1px solid #1d4ed8, 100% !important;
+	background-color: #1d4ed8;
+	color: white;
+  margin-top: 5px;
 }

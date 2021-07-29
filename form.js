@@ -88,7 +88,7 @@ function checkPage(){
     break;
   default:
     // code block
-    console.log('default code block')
+    break;
 }
 }
 
