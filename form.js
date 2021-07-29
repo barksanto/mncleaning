@@ -1,9 +1,4 @@
   
-
-setTimeout(() => {
-  // alert('need to add the back button functionality')
-
-}, 3000);
   // handlesubmit
   var form = document.getElementById("my-form");
     
@@ -52,7 +47,7 @@ let back4 = document.getElementById('back-4');
 let formPageCount = 1;
 // event listeners to +/- 
 let nextBtns = [next1, next2, next3];
-let backBtns = [back2, back3];
+let backBtns = [back2, back3, back4];
 
 nextBtns.forEach(btn => {
   btn.addEventListener('click', ()=>{
@@ -74,14 +69,18 @@ backBtns.forEach(btn => {
 function checkPage(){
   switch(formPageCount) {
   case 1:
+    page1.classList.remove('d-none')
+    page2.classList.add('d-none')
     break;
   case 2:
     page1.classList.add('d-none')
     page2.classList.remove('d-none')
+    page3.classList.add('d-none')
     break;
   case 3:
     page2.classList.add('d-none')
     page3.classList.remove('d-none')
+    page4.classList.add('d-none')
     break;
   case 4:
     page3.classList.add('d-none')
