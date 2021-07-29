@@ -23,8 +23,17 @@ input {
 
 /* next button styling */
 .next-btn:first-child {
-	border: 1px solid #1d4ed8, 100% !important;
+	border: 1px solid #1d4ed8;
+	border-radius: 5px;
 	background-color: #1d4ed8;
 	color: white;
-  margin-top: 5px;
+	margin-top: 5px;
+	max-width: 126px;
+}
+
+.back-btn {
+	border: 1px solid #1d4ed8;
+	max-width: 126px;
+	margin-top: 5px;
+	border-radius: 5px;
 }
