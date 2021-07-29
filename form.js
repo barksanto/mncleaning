@@ -1,7 +1,7 @@
   
 
 setTimeout(() => {
-  alert('need to add the back button functionality')
+  // alert('need to add the back button functionality')
 
 }, 3000);
   // handlesubmit
@@ -45,15 +45,26 @@ let next2 = document.getElementById('next-2');
 let next3 = document.getElementById('next-3');
 
 //back buttons
-
+let back2 = document.getElementById('back-2');
+let back3 = document.getElementById('back-3');
+let back4 = document.getElementById('back-4');
 
 let formPageCount = 1;
 // event listeners to +/- 
-let nextBtns = [next1, next2, next3]
+let nextBtns = [next1, next2, next3];
+let backBtns = [back2, back3];
 
 nextBtns.forEach(btn => {
   btn.addEventListener('click', ()=>{
   formPageCount +=1
+  checkPage()
+  console.log(formPageCount)
+})
+})
+
+backBtns.forEach(btn => {
+  btn.addEventListener('click', ()=>{
+  formPageCount -=1
   checkPage()
   console.log(formPageCount)
 })
