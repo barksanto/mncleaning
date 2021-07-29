@@ -119,5 +119,7 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+// hides the form when clicked outside of modal
+    form .style.display = "none"
   }
 }
