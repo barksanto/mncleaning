@@ -84,3 +84,50 @@ input {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* radio button for form */
+.donate-now {
+	list-style-type: none;
+	/* margin: 25px 0 0 0; */
+	padding: 0;
+}
+
+.donate-now li {
+	float: left;
+	/* margin: 0 5px 0 0; */
+	width: 40%;
+	height: 40px;
+	position: relative;
+}
+
+.donate-now label,
+.donate-now input {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+}
+
+.donate-now input[type="radio"] {
+	opacity: 0.01;
+	z-index: 100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+	background: #1d4ed8;
+}
+
+.donate-now label {
+	padding: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	z-index: 90;
+}
+
+.donate-now label:hover {
+	background: #99afec;
+}

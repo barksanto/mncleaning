@@ -1,5 +1,4 @@
-  
-  // handlesubmit
+// handlesubmit
   var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
