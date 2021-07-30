@@ -2,7 +2,7 @@
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	max-width: 80vw;
+	max-width: 90vw;
 	margin: 0 auto;
 	border-radius: 8px;
 	border: 3px solid #e2e8f0;
@@ -90,6 +90,7 @@ input {
 	list-style-type: none;
 	/* margin: 25px 0 0 0; */
 	padding: 0;
+	background-color: white;
 }
 
 .donate-now li {
@@ -98,6 +99,15 @@ input {
 	width: 40%;
 	height: 40px;
 	position: relative;
+	color: #1d4ed8;
+	text-align: center;
+
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0em;
 }
 
 .donate-now label,
@@ -108,7 +118,7 @@ input {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 200px;
+	/* width: 200px; */
 }
 
 .donate-now input[type="radio"] {
@@ -119,6 +129,7 @@ input {
 .donate-now input[type="radio"]:checked + label,
 .Checked + label {
 	background: #1d4ed8;
+	color: white;
 }
 
 .donate-now label {
