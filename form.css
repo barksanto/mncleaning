@@ -106,8 +106,6 @@ input {
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 18px;
-	letter-spacing: 0em;
 }
 
 .donate-now label,
@@ -140,5 +138,66 @@ input {
 }
 
 .donate-now label:hover {
+	background: #99afec;
+}
+
+.step {
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+/* new */
+.add-ons {
+	list-style-type: none;
+	/* margin: 25px 0 0 0; */
+	padding: 0;
+	background-color: white;
+}
+
+.add-ons li {
+	float: left;
+	/* margin: 0 5px 0 0; */
+	width: 40%;
+	height: 40px;
+	position: relative;
+	color: #1d4ed8;
+	text-align: center;
+
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.add-ons label,
+.add-ons input {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* width: 200px; */
+}
+
+.add-ons input[type="checkbox"] {
+	opacity: 0.01;
+	z-index: 100;
+}
+
+.add-ons input[type="checkbox"]:checked + label,
+.Checked + label {
+	background: #1d4ed8;
+	color: white;
+}
+
+.add-ons label {
+	padding: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	z-index: 90;
+}
+
+.add-ons label:hover {
 	background: #99afec;
 }

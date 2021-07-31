@@ -103,12 +103,8 @@
           <div class="small-banner-img col-sm-12 col-md-6">
           </div>
         </div>
-        <div class="row">
-          <div class="col-12" style="height:300px; background-color: blue;">
-
-          </div>
-        </div>
         <div id="form" class="row">
+          <h2 class="col-12 text-center">Get your free quote!</h2>
           <form class="col-12" id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
             
             <div id="page-1" class="form-page-1 row justify-content-center">
@@ -140,7 +136,7 @@
               
               <div class="col-12">
                 <div class="row justify-content-center">
-                    <div class="col-8 text-right"><p >Step 1 of 4</p></div>
+                    <div class="col-8 text-right step"><p >Step 1 of 4</p></div>
                     <div class="col-4 text-center"><p id="next-1" class="next-btn">Next</p></div>
                 </div>
               </div>
@@ -166,7 +162,7 @@
 
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col-5 text-right"><p>Step 2 of 4</p></div>
+                  <div class="col-5 text-right step"><p>Step 2 of 4</p></div>
                   <div class="col-4"><p id="back-2" class="back-btn text-center">Back</p></div>
                   <div class="col-3"><p id="next-2" class="next-btn text-center">Next</p></div>
                 </div>
@@ -176,37 +172,37 @@
 
             <div id="page-3" class="form-page-3 d-none row justify-content-center">
 
-              <div class="col-sm-12 col-md-6">
-                <label class="row justify-content-center">Routine or Deep Clean?</label>
+              <div class="col-sm-12 col-lg-6">
+                <label >Routine or Deep Clean?</label>
                 <!-- <input type="text" name="frequency" /> -->
                 <ul class="donate-now row justify-content-center">
-                  <li class="col-6">
+                  <li class="col-5">
                     <input type="radio" id="a25" name="Type of clean" value="Routine clean please."/>
                     <label for="a25">Routine Clean</label>
                   </li>
-                  <li class="col-6">
-                    <input type="radio" id="a50" name="Type of clean" value="Deep clean please"/>
+                  <li class="col-5">
+                    <input type="radio" id="a26" name="Type of clean" value="Deep clean please"/>
                     <label for="a50">Deep Clean</label>
                   </li>
                 </ul>
               </div>
               
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-lg-6">
                 <label>How often would you like your place cleaned?</label>
                 <ul class="donate-now row justify-content-center">
-                  <li class="col-6">
+                  <li class="col-5">
                     <input type="radio" id="a26" name="Frequency" value="One time" />
                     <label for="a26">Once</label>
                   </li>
-                  <li class="col-6">
+                  <li class="col-5">
                     <input type="radio" id="a27" name="Frequency" value="Every 2 weeks." />
                     <label for="a27">Every 2 weeks</label>
                   </li>
-                  <li class="col-6">
+                  <li class="col-5">
                     <input type="radio" id="a28" name="Frequency" value="Every 4 weeks." />
                     <label for="a28">Every 4 weeks</label>
                   </li>
-                  <li class="col-6">
+                  <li class="col-5">
                     <input type="radio" id="a29" name="Frequency" value="Other" />
                     <label for="a29">Other</label>
                   </li>
@@ -215,7 +211,7 @@
 
             <div class="col-12">
               <div class="row justify-content-center">
-                <div class="col-5 text-right"><p>Step 3 of 4</p></div>
+                <div class="col-5 text-right step"><p>Step 3 of 4</p></div>
                 <div class="col-4"><p id="back-3" class="back-btn  text-center">Back</p></div>
                 <div class="col-3 "><p id="next-3" class="next-btn text-center">Next</p></div>
                 <p id="my-form-status"></p>
@@ -226,17 +222,39 @@
 
             <div id="page-4" class="form-page-4 d-none row justify-content-center">
 
-              <div class="col-8">
+              <div class="col-12">
                 <label>Pick any add-ons you would like:</label>
-                <input type="text" name="add-ons" />
+                
+                <!-- new -->
+                <ul class="add-ons row justify-content-center my-3">
+                  <li class="col-5">
+                    <input type="checkbox" id="a40" name="extra" value="Fridge & Freezer" />
+                    <label for="a40">Fridge & Freezer</label>
+                  </li>
+                  <li class="col-5">
+                    <input type="checkbox" id="a41" name="extra2" value="Oven & Stove." />
+                    <label for="a41">Oven & Stove</label>
+                  </li>
+                  <li class="col-5">
+                    <input type="checkbox" id="a42" name="extra3" value="Windows" />
+                    <label for="a42">Windows</label>
+                  </li>
+                  <li class="col-5">
+                    <input type="checkbox" id="a43" name="extra4" value="Cabinets" />
+                    <label for="a43">Cabinets</label>
+                  </li>
+                </ul>
+
+                <label>Other</label>
+                <input type="text" name="add-ons" placeholder="Any other requests?"/>
               </div>
 
               <div class="col-12">
                 <div class="row justify-content-center">
                   <div class="col-6"><p id="back-4" class="back-btn text-center">Back</p></div>
-                  <div class="col-6"><button id="my-form-button" >Finish</button></div>
-                  <div class="col-6"><p class="myBtn" >TEST SUBMIT</p></div>
-
+                  <!-- DONT DELETE THIS BUTTON AGAIN YOU IDIOT , YOU NEED IT -->
+                  <!-- <div class="col-6"><button id="my-form-button" >Finish</button></div> -->
+                  <div class="col-6"><p class="myBtn" >TEST SUBMIT</p></div> 
                 </div>
               </div>
             
