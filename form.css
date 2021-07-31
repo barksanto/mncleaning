@@ -201,3 +201,16 @@ input {
 .add-ons label:hover {
 	background: #99afec;
 }
+
+.other-requests {
+	width: 100%;
+	word-wrap: break-word;
+	word-break: break-all;
+
+	resize: none;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+}

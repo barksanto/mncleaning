@@ -52,7 +52,7 @@ nextBtns.forEach(btn => {
   btn.addEventListener('click', ()=>{
   formPageCount +=1
   checkPage()
-  console.log(formPageCount)
+  console.log(`Page ${formPageCount}`)
 })
 })
 
@@ -60,7 +60,7 @@ backBtns.forEach(btn => {
   btn.addEventListener('click', ()=>{
   formPageCount -=1
   checkPage()
-  console.log(formPageCount)
+  console.log(`Page ${formPageCount}`)
 })
 })
 
