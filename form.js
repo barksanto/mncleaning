@@ -6,7 +6,10 @@
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
 
-      console.log(data)
+      // console.log(data)
+      
+
+
 
       fetch(event.target.action, {
         method: form.method,
@@ -104,6 +107,8 @@ let btn = document.querySelector(".myBtn");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
+let getQuote = document.querySelector('.get-quote')
+
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -113,6 +118,7 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
   form.style.display = "none";
+  getQuote.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -121,6 +127,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
 // hides the form when clicked outside of modal
     form.style.display = "none";
+    getQuote.style.display = "none";
   }
 }
 
@@ -130,4 +137,5 @@ let okay = document.querySelector('.okay')
 okay.onclick = function() {
   modal.style.display = "none";
   form.style.display = "none";
+  getQuote.style.display = "none";
 }

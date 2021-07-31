@@ -53,7 +53,7 @@ body {
 }
 
 /* large screen nav */
-ul {
+.big-nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -68,9 +68,9 @@ ul {
 }
 
 /* leaving this because I have no idea what happens if its removed */
-li {
+/* li {
 	float: left;
-}
+} */
 
 li a {
 	display: block;
