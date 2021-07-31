@@ -96,13 +96,13 @@ let testSubmit = document.querySelector('#test-submit');
 
 
 // modal code
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.querySelector(".myBtn");
+let btn = document.querySelector(".myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -122,4 +122,12 @@ window.onclick = function(event) {
 // hides the form when clicked outside of modal
     form.style.display = "none";
   }
+}
+
+// when user clicks on Okay, close it
+let okay = document.querySelector('.okay')
+
+okay.onclick = function() {
+  modal.style.display = "none";
+  form.style.display = "none";
 }
