@@ -1,3 +1,41 @@
 /* .who-what-when div ul li{
 	list-style-type: url("./checkmark.png");
 } */
+
+.wwh-title {
+	text-align: center;
+}
+
+.wwh {
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 80vw !important;
+	margin-top: 20px;
+}
+
+.wwh ul {
+	list-style: none;
+	padding: 0;
+}
+.wwh ul li {
+	padding-left: 1.3em;
+}
+/* WHAT/WHEN/HOW - list icons*/
+.wwh .what li:before {
+	content: "\f14a"; /* FontAwesome Unicode */
+}
+
+.wwh .when li:before {
+	content: "\f017"; /* FontAwesome Unicode */
+}
+
+.wwh .how li:before {
+	content: "\f0eb"; /* FontAwesome Unicode */
+}
+
+.wwh ul li:before {
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -1.3em; /* same as padding-left set on li */
+	width: 1.3em; /* same as padding-left set on li */
+}
