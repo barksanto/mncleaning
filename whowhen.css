@@ -1,5 +1,11 @@
 .wwh-title {
 	text-align: center;
+	position: absolute;
+
+	/* allows for Who What When titles to be split along the top of the box they live in */
+	top: -15px;
+	margin-bottom: 15px;
+	left: 35%;
 }
 
 .wwh {
@@ -55,4 +61,10 @@
 
 .who-what-when {
 	max-width: 1036px;
+}
+
+.what,
+.when,
+.how {
+	margin-top: 15px;
 }
