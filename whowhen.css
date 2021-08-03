@@ -14,7 +14,7 @@
 	/* width: 90vw !important; */
 	margin-top: 25px;
 	box-shadow: 0px 4px 6px 2px grey;
-
+	margin-right: 10px;
 }
 
 .wwh ul {
@@ -44,28 +44,12 @@
 	width: 1.3em; /* same as padding-left set on li */
 }
 
-/* @media (min-width: 1320px) {
-	.wwh {
-		-ms-flex: 0 0 30%;
-		flex: 0 0 30%;
-		max-width: 30% !important;
-	}
-} */
-
-/* @media (max-width: 360px) {
-	.wwh {
-		-ms-flex: 0 0 90%;
-		flex: 0 0 90%;
-		max-width: 90% !important;
-	}
-} */
-
-.who-what-when {
-	max-width: 1036px;
-}
-
 .what,
 .when,
 .how {
 	margin-top: 15px;
+}
+
+.who-what-when {
+	/* width: 90vw; */
 }
