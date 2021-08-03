@@ -5,7 +5,7 @@
 	/* allows for Who What When titles to be split along the top of the box they live in */
 	top: -15px;
 	margin-bottom: 15px;
-	left: 35%;
+	left: 40%;
 }
 
 .wwh {
@@ -15,6 +15,7 @@
 	margin-top: 25px;
 	box-shadow: 0px 4px 6px 2px grey;
 	margin-right: 10px;
+	min-width: 30%;
 }
 
 .wwh ul {
