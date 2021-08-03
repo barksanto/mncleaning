@@ -6,7 +6,9 @@
 	background-size: cover;
 	background-position: center;
 }
-
+body {
+	/* background-color: #ec9972 !important; */
+}
 @media (max-width: 844px) {
 	/* mobile CSS: hide .desktop div */
 	.banner-img {
