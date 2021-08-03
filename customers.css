@@ -1,0 +1,15 @@
+.customers {
+	background-color: #f5c396;
+}
+
+.avatar {
+	width: 32px;
+	border-radius: 50%;
+}
+
+.customer-card {
+	border: 1px solid grey;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
