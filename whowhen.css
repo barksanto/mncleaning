@@ -3,7 +3,7 @@
 	position: absolute;
 
 	/* allows for Who What When titles to be split along the top of the box they live in */
-	top: -15px;
+	top: -18px;
 	margin-bottom: 15px;
 	left: 40%;
 }
@@ -15,7 +15,7 @@
 	margin-top: 25px;
 	box-shadow: 0px 4px 6px 2px grey;
 	margin-right: 10px;
-	min-width: 30%;
+	margin-left: 10px;
 }
 
 .wwh ul {
@@ -53,4 +53,15 @@
 
 .who-what-when {
 	/* width: 90vw; */
+}
+
+@media (min-width: 450px) {
+	.wwh {
+		max-width: 31.5% !important;
+	}
+
+	.customer-card {
+		max-width: 32.333333% !important;
+		margin-left: 5px !important;
+	}
 }
