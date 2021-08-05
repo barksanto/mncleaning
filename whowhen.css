@@ -5,7 +5,7 @@
 	/* allows for Who What When titles to be split along the top of the box they live in */
 	top: -18px;
 	margin-bottom: 15px;
-	left: 40%;
+	left: 37%;
 }
 
 .wwh {
@@ -51,17 +51,18 @@
 	margin-top: 15px;
 }
 
-.who-what-when {
-	/* width: 90vw; */
-}
-
 @media (min-width: 450px) {
 	.wwh {
 		max-width: 31.5% !important;
 	}
 
-	.customer-card {
+	/* .customer-card {
 		max-width: 32.333333% !important;
-		margin-left: 5px !important;
-	}
+	} */
 }
+
+/* @media (min-width: 780px) {
+	.wwh {
+		max-width: 45.5% !important;
+	}
+} */

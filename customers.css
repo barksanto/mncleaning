@@ -11,5 +11,13 @@
 	border: 1px solid grey;
 	margin-bottom: 10px;
 	padding: 10px;
-	
+	margin-left: 5px;
+	margin-right: 5px;
 }
+
+@media (min-width: 776px) {
+	.customer-card {
+		max-width: 32% !important;
+	}
+}
+
