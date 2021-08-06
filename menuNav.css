@@ -1,10 +1,3 @@
-body {
-	font-family: "Poppins", sans-serif;
-	color: #eef0f2;
-	margin: 0 auto;
-	/* max-width: 100vw; */
-}
-
 #logo {
 	height: 50px;
 	width: 50px;
@@ -58,7 +51,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #f15209;
+	background-color: #ce6536;
 	color: white !important;
 	/* margin-top: 5px !important; */
 }
