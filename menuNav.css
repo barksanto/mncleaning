@@ -33,7 +33,7 @@
 /* hamburger nav items */
 .nav-item {
 	/* width: 80vw; */
-	display: inline;
+	/* display: inline; */
 	/* margin-left: 20px; */
 	/* margin-right: 20px; */
 }
@@ -96,5 +96,8 @@ ul.big-nav {
 	}
 }
 
-.small-nav {
+.stick-top {
+	position: sticky;
+	top: 0px;
+	z-index: 99;
 }

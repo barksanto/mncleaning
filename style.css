@@ -12,6 +12,7 @@ body {
 	max-height: 300px;
 	background-size: cover;
 	background-position: center;
+	margin: 0;
 }
 
 @media (max-width: 844px) {
@@ -36,5 +37,6 @@ body {
 .set-width,
 #form,
 .angies-list {
-	width: 100%;
+	/* any way to make 100? */
+	width: 105%;
 }
