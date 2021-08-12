@@ -192,7 +192,6 @@ input {
 }
 
 .add-ons label {
-	padding: 5px;
 	border: 1px solid #ccc;
 	cursor: pointer;
 	z-index: 90;
@@ -200,6 +199,7 @@ input {
 
 .add-ons label:hover {
 	background: #ecaa98;
+	color: white;
 }
 
 .other-requests {
