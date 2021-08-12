@@ -40,13 +40,16 @@ input {
 	color: white;
 	margin-top: 5px;
 	max-width: 126px;
+	padding: 10px;
 }
 
 .back-btn {
-	border: 1px solid #1d4ed8;
 	max-width: 126px;
 	margin-top: 5px;
 	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	background-color: #ecaa98;
 }
 
 /* modal code */
@@ -102,7 +105,7 @@ input {
 	width: 40%;
 	height: 40px;
 	position: relative;
-	color: #1d4ed8;
+	color: #d95531;
 	text-align: center;
 
 	font-family: "Inter", sans-serif;
@@ -129,24 +132,18 @@ input {
 
 .donate-now input[type="radio"]:checked + label,
 .Checked + label {
-	background: #1d4ed8;
+	background: #d95531;
 	color: white;
 }
 
 .donate-now label {
-	padding: 5px;
 	border: 1px solid #ccc;
 	cursor: pointer;
 	z-index: 90;
 }
 
 .donate-now label:hover {
-	background: #99afec;
-}
-
-.step {
-	font-weight: bold;
-	margin-top: 5px;
+	background: #ecaa98;
 }
 
 /* new */
@@ -163,7 +160,7 @@ input {
 	width: 40%;
 	height: 40px;
 	position: relative;
-	color: #1d4ed8;
+	color: #d95531;
 	text-align: center;
 
 	font-family: "Inter", sans-serif;
@@ -190,7 +187,7 @@ input {
 
 .add-ons input[type="checkbox"]:checked + label,
 .Checked + label {
-	background: #1d4ed8;
+	background: #d95531;
 	color: white;
 }
 
@@ -202,7 +199,7 @@ input {
 }
 
 .add-ons label:hover {
-	background: #99afec;
+	background: #ecaa98;
 }
 
 .other-requests {
@@ -225,10 +222,21 @@ input {
 	background-color: #ffffff !important;
 	box-shadow: 0px 4px 6px -1px #0000000d;
 	border-radius: 8px;
+	min-height: 20vh !important;
 }
 
 .form-title {
 	font-size: 24px;
 	padding-left: 15px;
 	font-family: "Inter", sans-serif;
+}
+
+form label {
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+}
+
+.step {
+	font-weight: bold;
+	margin-top: 15px;
 }
