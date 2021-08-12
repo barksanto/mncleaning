@@ -74,14 +74,20 @@ input {
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80% !important;
+	max-width: 750px;
+}
+
+.okay {
+	background-color: #d95531 !important;
 }
 
 /* The Close Button */
 .close {
 	color: #aaaaaa;
 	float: right;
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: bold;
+	margin-left: 95%;
 }
 
 .close:hover,
@@ -244,13 +250,13 @@ form label {
 
 .left-rad {
 	border-radius: 8px 0 0 8px;
-  min-height: 40px;
-  padding-top: 5px;
-  border: 1px solid #D95531 !important;
+	min-height: 40px;
+	padding-top: 5px;
+	border: 1px solid #d95531 !important;
 }
 .right-rad {
 	border-radius: 0 8px 8px 0;
-  min-height: 40px;
-  padding-top: 5px;
-  border: 1px solid #D95531 !important;
+	min-height: 40px;
+	padding-top: 5px;
+	border: 1px solid #d95531 !important;
 }
