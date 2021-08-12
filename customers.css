@@ -1,5 +1,5 @@
 .customers {
-	background-color: #CE6536;
+	background-color: #f3f0ed;
 }
 
 .avatar {
@@ -8,7 +8,6 @@
 }
 
 .customer-card {
-	border: 1px solid grey;
 	margin-bottom: 10px;
 	padding: 10px;
 	margin-left: 5px;
@@ -24,4 +23,14 @@
 .customers {
 	margin-left: 5px !important;
 	margin-right: 5px !important;
+}
+
+.happy {
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+}
+
+.star {
+	color: #d95531;
+	fill: #d95531;
 }
