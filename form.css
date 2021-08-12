@@ -241,3 +241,10 @@ form label {
 	font-weight: bold;
 	margin-top: 15px;
 }
+
+.left-rad {
+	border-radius: 8px 0 0 8px;
+}
+.right-rad {
+	border-radius: 0 8px 8px 0;
+}
