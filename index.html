@@ -32,8 +32,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 
   <!-- icon attribution -->
@@ -41,7 +39,7 @@
  </head>
   <body>
     <div class="stick-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg ">
         <!-- logo -->
         <a class="navbar-brand" href="#">
           <div id="logo"></div>
@@ -55,10 +53,10 @@
             <div class="row justify-content-between">
               <div class="col-6">
                 <!-- <a href="+16177190054" class="btn btn-sm active" role="button">6177190054</a> -->
-                <button class="top-btn btn btn-warning">Call us</button>
+                <button class="top-btn btn call-us">Call us</button>
               </div>
               <div class="col-6">
-                <button class="top-btn btn btn-primary">Quote</button>
+                <button class="top-btn btn quote">Quote</button>
               </div>
             </div>
           </div>
@@ -123,8 +121,12 @@
           <h2 class="col-12 text-center get-quote my-4">Get your free quote!</h2>
           <form class="col-11" id="my-form" action="https://formspree.io/f/myylngnk" method="POST">
             <!--NEW ACTION -> action="https://formspree.io/f/mzbyjrqa" -->
-            <div id="page-1" class="form-page-1 row justify-content-center">
-
+            <div id="page-1" class="form-page-1 row justify-content-center pt-5">
+              <div class="col-12">
+                <div class="row form-title">
+                  Your Home
+                </div>
+              </div>
               <div class="col-sm-5 col-md-4">
                   <label >Zip Code:</label>
                   <input type="number" name="zip" />
@@ -150,7 +152,7 @@
                 <input type="number" name="phone" />
               </div>
               
-              <div class="col-12">
+              <div class="col-12 mt-5 pb-3">
                 <div class="row justify-content-center">
                     <div class="col-8 text-right step"><p >Step 1 of 4</p></div>
                     <div class="col-4 text-center"><p id="next-1" class="next-btn">Next</p></div>

@@ -78,8 +78,9 @@ li a:hover {
 }
 
 .navbar {
-	position: relative !important;
+	position: sticky !important;
 	width: 100vw;
+	top: 0;
 }
 
 ul.big-nav {
@@ -100,4 +101,15 @@ ul.big-nav {
 	position: sticky;
 	top: 0px;
 	z-index: 99;
+	background-color: #f3f0ed;
+}
+
+.top-btn.quote {
+	background-color: #d95531;
+	color: white;
+}
+
+.top-btn.call-us {
+	background-color: #f3f0ed;
+	color: #d95531;
 }
