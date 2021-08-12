@@ -102,6 +102,7 @@ ul.big-nav {
 	top: 0px;
 	z-index: 99;
 	background-color: #f3f0ed;
+	width: 102vw;
 }
 
 .top-btn.quote {
