@@ -51,3 +51,7 @@ div.panel.show {
 .chevron {
 	color: #d95531;
 }
+
+.faq-title {
+	font-weight: 600;
+}
