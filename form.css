@@ -34,17 +34,20 @@ input {
 
 /* next button styling */
 .next-btn:first-child {
-	/* border: 1px solid #1d4ed8; */
 	border-radius: 5px;
 	background-color: #d95531;
 	color: white;
 	margin-top: 5px;
-	max-width: 126px;
+	max-width: 125px;
+	min-width: 60px;
+  width: 100%;
 	padding: 10px;
 }
 
 .first-back-btn {
-	max-width: 126px;
+	max-width: 125px;
+	min-width: 60px;
+  width: 100%;
 	margin-top: 5px;
 	border-radius: 5px;
 	padding: 10px;
@@ -53,12 +56,15 @@ input {
 }
 
 .back-btn {
-	max-width: 126px;
+	max-width: 125px;
+	width: 100%;
+	min-width: 60px;
 	margin-top: 5px;
 	border-radius: 5px;
 	padding: 10px;
 	color: white;
 	background-color: #d95531;
+	float: right;
 }
 
 /* modal code */

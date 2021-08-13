@@ -139,3 +139,4 @@ okay.onclick = function() {
   form.style.display = "none";
   getQuote.style.display = "none";
 }
+
