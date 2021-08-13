@@ -7,10 +7,6 @@
       var data = new FormData(event.target);
 
       // console.log(data)
-      
-
-
-
       fetch(event.target.action, {
         method: form.method,
         body: data,
