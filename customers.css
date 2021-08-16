@@ -35,3 +35,14 @@
 	fill: #d95531;
 	/* width: 20px !important; */
 }
+
+
+.arrow-right{
+  color: #d95531;
+}
+
+.see-more-angie{
+  float: right;
+  text-decoration: underline;
+  color: #41342B ;
+}
