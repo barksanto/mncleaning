@@ -1,3 +1,6 @@
+* {
+	margin: 0 auto;
+}
 body {
 	font-family: "Poppins", sans-serif;
 	color: #eef0f2;
@@ -38,5 +41,10 @@ body {
 #form,
 .angies-list {
 	/* any way to make 100? */
-	width: 100%;
+	/* width: 100%; */
+}
+
+html {
+	margin-right: -20px;
+	width: 100vw !important;
 }
