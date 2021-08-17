@@ -5,3 +5,9 @@
 .mn-email {
 	text-align: left !important;
 }
+
+.phone-icon,
+.email-icon {
+	color: #d95531;
+	padding-right: 5px;
+}
