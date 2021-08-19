@@ -66,6 +66,10 @@ p {
 	font-weight: 700;
 	font-size: 3em;
 }
+.prestine {
+	text-decoration: underline #C34D2C;
+	text-decoration-thickness: 0.15em;
+}
 
 .hero-text div h5 {
 	font-weight: 400;
