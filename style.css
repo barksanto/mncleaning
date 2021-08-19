@@ -49,3 +49,11 @@ html {
 	width: 100vw !important;
 	scroll-behavior: smooth;
 }
+
+/* for email template */
+
+p{
+  padding-top:50px; 
+  font-size:17px; 
+  vertical-align: top;
+}
