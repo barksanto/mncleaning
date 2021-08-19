@@ -43,6 +43,12 @@ input {
 	width: 100%;
 	padding: 10px;
 }
+.next-btn:first-child:hover {
+	background-color: #e0765a;
+	font-size: 0.9em;
+
+	padding: 12px;
+}
 
 .first-back-btn {
 	max-width: 125px;
@@ -62,9 +68,15 @@ input {
 	margin-top: 5px;
 	border-radius: 5px;
 	padding: 10px;
-	color: white;
-	background-color: #d95531;
+	color: #d95531;
+	background-color: white;
 	float: right;
+  border: 1px solid #d95531;
+}
+
+.back-btn:hover {
+	color: #e7927a;
+  border: 1px solid #ecaa98;
 }
 
 /* modal code */
