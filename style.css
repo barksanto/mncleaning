@@ -52,8 +52,22 @@ html {
 
 /* for email template */
 
-p{
-  padding-top:50px; 
-  font-size:17px; 
-  vertical-align: top;
+p {
+	padding-top: 50px;
+	font-size: 17px;
+	vertical-align: top;
+}
+
+.hero-text {
+	color: #41342b;
+}
+
+.hero-text div h2 {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.hero-text div h5 {
+	font-weight: 400;
+	font-size: 1.4em;
 }
