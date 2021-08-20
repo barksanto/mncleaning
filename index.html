@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./faq.css">
     <link rel="stylesheet" href="./team.css">
     <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./contact-form.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -750,7 +751,7 @@
                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
             </div> -->
 
-  <div class="banner" style="margin: 0 auto; 	
+  <!-- <div class="banner" style="margin: 0 auto; 	
                 background-color: #EBEBEB;
                 width: 90%;
                 height: 100%;
@@ -781,12 +782,7 @@
   
         </span>
         <br>
-        <!-- <div style="border-bottom: 2px solid grey;">
-          <span class="ban2"
-            style="color: black; font-size:25px;">
-            Founder Hedgebettor
-          </span>
-        </div> -->
+    
   
       </p>
       <br><br><br><br>
@@ -805,15 +801,36 @@
         fellow gamblers. You can hear some of
         them in our podcasts.
       </p>
-      <!-- <p style="margin-bottom: none; padding: none !important;">
-        
-                  </p>
-                  <p style="margin-bottom: none; padding: none !important;">
-                   
-                  </p> -->
     </div>
-  </div>
-      </div>
+  </div> -->
+    <div class="row justify-content-center">
+      <form id="contact-form" action="https://formspree.io/f/mvodvvqq" method="POST" class="col-8">
+        <div class="row justify-content-between">
+          <div class="col-sm-12 col-md-6">
+            <label>First name:</label>
+            <input type="text" name="first-name" />
+        </div>
+          <div class="col-sm-12 col-md-6">
+            <label>Last name:</label>
+            <input type="text" name="last-name" />
+        </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-sm-12 col-md-6">
+            <label>Email:</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <label>Phone number:</label>
+            <input type="text" name="message" />
+          </div>
+        </div>
+        
+        <button id="contact-form-button">Submit</button>
+        <p id="contact-form-status"></p>
+      </form>
+    </div>      
+</div>
       
     <script>
       feather.replace()
