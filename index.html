@@ -807,26 +807,33 @@
       <form id="contact-form" action="https://formspree.io/f/mvodvvqq" method="POST" class="col-8">
         <div class="row justify-content-between">
           <div class="col-sm-12 col-md-6">
-            <label>First name:</label>
+            <label>First name</label>
             <input type="text" name="first-name" />
         </div>
           <div class="col-sm-12 col-md-6">
-            <label>Last name:</label>
+            <label>Last name</label>
             <input type="text" name="last-name" />
         </div>
         </div>
         <div class="row justify-content-between">
           <div class="col-sm-12 col-md-6">
-            <label>Email:</label>
+            <label>Email</label>
             <input type="email" name="email" />
           </div>
           <div class="col-sm-12 col-md-6">
-            <label>Phone number:</label>
-            <input type="text" name="message" />
+            <label>Phone number</label>
+            <input type="text" name="phone-number" />
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+              <label>Message:</label>
+              <textarea type="text" name="message" placeholder="" class="other-requests" size="50"></textarea>
+
+          </div> 
+        </div>
         
-        <button id="contact-form-button">Submit</button>
+        <button id="contact-form-button">Send message</button>
         <p id="contact-form-status"></p>
       </form>
     </div>      
