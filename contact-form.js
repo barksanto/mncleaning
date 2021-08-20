@@ -16,5 +16,8 @@
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
+
+      
     }
+
     form.addEventListener("submit", handleSubmit)

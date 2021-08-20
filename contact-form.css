@@ -1,6 +1,7 @@
 #contact-form {
 	padding: 15px;
 	margin-top: 20px;
+  border: 2px solid #f3e7db;
 }
 
 #contact-form label {
@@ -13,8 +14,11 @@
 
 #contact-form-button {
 	color: white;
-	background-color: #D95531;
+	background-color: #d95531;
 	padding: 5px 10px;
 	border-radius: 5px;
-  border: none;
+	border: none;
+}
+#contact-form-button:hover {
+	background-color: #ecaa98;
 }
