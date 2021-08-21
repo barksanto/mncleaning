@@ -13,7 +13,7 @@
 	object-fit: contain;
 
 	position: relative;
-
+  right: 10px;
 }
 
 .book-clean {
