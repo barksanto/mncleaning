@@ -51,7 +51,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #ce6536;
+	background-color: #d95531;
 	color: white !important;
 	/* margin-top: 5px !important; */
 }
@@ -87,6 +87,11 @@ ul.big-nav {
 	display: block;
 	display: flex;
 	justify-content: space-around;
+}
+
+.big-nav li a:hover {
+	background-color: #973215;
+	color: white;
 }
 
 /* hide big nav on small screens */
