@@ -49,9 +49,13 @@
 
 #small-nav .nav-item {
 	background-color: #d95531;
-  width: 80%;
-  border-radius: 4px;
-  border: 1px solid white;
+	width: 60%;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin: 5px;
+
+	position: relative;
+	left: 140px;
 }
 
 /* large screen nav */
@@ -75,11 +79,6 @@
 .nav-link:hover {
 	background-color: #ec9972 !important;
 }
-
-/* leaving this because I have no idea what happens if its removed */
-/* li {
-	float: left;
-} */
 
 li a {
 	display: block;
