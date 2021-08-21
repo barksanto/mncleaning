@@ -12,6 +12,7 @@
 	width: 50vw !important;
 }
 
+
 @media (min-width: 844px) {
 	.navbar-toggler {
 		display: none !important;
@@ -61,7 +62,7 @@
 /* large screen nav */
 .big-nav {
 	list-style-type: none;
-	/* margin: 0; */
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #d95531;
@@ -70,6 +71,10 @@
 	align-items: center;
 	font-size: 1.4em;
 	/* margin-top: 5px !important; */
+}
+
+dl ol li {
+  margin-bottom: 0 !important;
 }
 
 .big-nav ul li {
@@ -116,6 +121,9 @@ ul.big-nav {
 	.big-nav {
 		display: none !important;
 	}
+
+ 
+
 }
 
 @media (min-width: 767px) {
@@ -124,6 +132,8 @@ ul.big-nav {
 	button.navbar-toggler {
 		display: none !important;
 	}
+
+ 
 }
 
 .stick-top {
