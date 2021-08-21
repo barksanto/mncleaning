@@ -47,6 +47,13 @@
 	margin-top: 10px !important;
 }
 
+#small-nav .nav-item {
+	background-color: #d95531;
+  width: 80%;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
 /* large screen nav */
 .big-nav {
 	list-style-type: none;
@@ -148,19 +155,14 @@ ul.big-nav {
 	}
 }
 
-
 @media (max-width: 868px) {
 	.book {
 		font-size: 2rem !important;
 	}
-
- 
 }
 
 @media (max-width: 767px) {
-		.book {
+	.book {
 		font-size: 1rem !important;
 	}
-	
 }
-
