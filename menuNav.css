@@ -53,6 +53,9 @@
 	overflow: hidden;
 	background-color: #d95531;
 	color: white !important;
+  min-height: 10vh;
+  align-items: center;
+  font-size: 1.4em;
 	/* margin-top: 5px !important; */
 }
 
