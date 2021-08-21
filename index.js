@@ -13,3 +13,16 @@ setInterval(() => {
 }
 
 }, 2000);
+
+
+
+let hamburger = document.getElementById('navbarText')
+let listItems = document.querySelectorAll('#small-nav .nav-item');
+console.log(hamburger)
+
+listItems.forEach(item =>{
+  item.addEventListener('click', ()=>{
+    hamburger.classList.remove('show');
+    console.log('clicked')
+  })
+})
