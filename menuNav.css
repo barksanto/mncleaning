@@ -85,6 +85,12 @@ dl ol li {
 	background-color: #ec9972 !important;
 }
 
+.hamburger{
+  color: #41342B;
+  height: 40px;
+  width: 40px;
+}
+
 li a {
 	display: block;
 	color: white;
