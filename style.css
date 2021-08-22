@@ -14,8 +14,9 @@ body {
 	height: 45vh;
 	max-height: 400px;
 	background-size: cover;
-	background-position: center;
+	/* background-position: center; */
 	margin: 0;
+
 }
 
 @media (max-width: 844px) {
