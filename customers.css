@@ -31,7 +31,7 @@
 }
 
 .star {
-	color: #d95531;
+	color: #d95531 !important;
 	fill: #d95531;
 	/* width: 20px !important; */
 }
