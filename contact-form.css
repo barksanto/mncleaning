@@ -1,7 +1,8 @@
 #contact-form {
 	padding: 15px;
 	margin-top: 20px;
-  border: 2px solid #f3e7db;
+	border: 2px solid #f3e7db;
+	margin: 0 50vw;
 }
 
 #contact-form label {
