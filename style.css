@@ -73,3 +73,22 @@ body {
 	color: #41342b !important;
 }
 
+.footer-icon-email {
+}
+
+.footer-icon-phone {
+}
+
+@media (max-width: 768px) {
+	.footer-div p {
+		text-align: center;
+	}
+}
+
+@media (min-width: 770px) {
+	.footer-div {
+		position: relative;
+		left: 40%;
+		margin-right: 0;
+	}
+}
