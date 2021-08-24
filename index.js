@@ -8,8 +8,8 @@ let width = window.innerWidth;
 
 setInterval(() => {
   if (width < 768){
-  phone.classList.remove('mn-phone')
-  email.classList.remove('mn-email')
+  phone.classList.remove('mn-phone');
+  email.classList.remove('mn-email');
 }
 
 }, 2000);
@@ -18,7 +18,6 @@ setInterval(() => {
 
 let hamburger = document.getElementById('navbarText')
 let listItems = document.querySelectorAll('#small-nav .nav-item');
-console.log(hamburger)
 
 listItems.forEach(item =>{
   item.addEventListener('click', ()=>{

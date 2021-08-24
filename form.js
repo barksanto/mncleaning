@@ -4,7 +4,7 @@
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
+      var data = new FormData(event.target); 
 
       // console.log(data)
       fetch(event.target.action, {
@@ -55,7 +55,7 @@ nextBtns.forEach(btn => {
 })
 })
 
-backBtns.forEach(btn => {
+backBtns.forEach(btn => { 
   btn.addEventListener('click', ()=>{
   formPageCount -=1
   checkPage()

@@ -16,7 +16,6 @@ body {
 	background-size: cover;
 	/* background-position: center; */
 	margin: 0;
-
 }
 
 @media (max-width: 844px) {
@@ -73,3 +72,4 @@ p {
 body {
 	color: #41342b !important;
 }
+
