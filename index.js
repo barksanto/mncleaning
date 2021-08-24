@@ -26,3 +26,4 @@ listItems.forEach(item =>{
     console.log('clicked')
   })
 })
+
