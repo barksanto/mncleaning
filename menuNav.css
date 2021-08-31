@@ -20,6 +20,13 @@
 	/* width: 100vw !important; */
 }
 
+.make-full {
+	width: 100vw;
+}
+
+.byk-text {
+}
+
 @media (min-width: 844px) {
 	.navbar-toggler {
 		display: none !important;
@@ -27,7 +34,15 @@
 	#navbarText {
 		display: none !important;
 	}
+
 }
+
+@media (max-width: 576px) {
+	.byk-text {
+		display: none;
+	}
+}
+
 
 .book {
 	font-size: 1rem !important;
@@ -165,7 +180,7 @@ ul.big-nav {
 	}
 
 	.book-clean {
-		width: 70vw !important;
+		width: 90vw !important;
 	}
 }
 
