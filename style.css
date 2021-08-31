@@ -87,8 +87,12 @@ body {
 
 @media (min-width: 770px) {
 	.footer-div {
-		position: relative;
+		/* position: relative;
 		left: 40%;
-		margin-right: 0;
+		margin-right: 0; */
 	}
+}
+
+.footer-div p {
+	max-width: 345px;
 }
