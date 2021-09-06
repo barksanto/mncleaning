@@ -42,6 +42,10 @@
 	#navbarText {
 		display: none !important;
 	}
+
+	.byk-text p {
+		font-size: 2rem;
+	}
 }
 
 @media (max-width: 576px) {
