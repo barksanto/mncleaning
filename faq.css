@@ -14,7 +14,7 @@ p.accordion {
 /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 p.accordion.active,
 p.accordion:hover {
-	background-color: #ddd;
+	background-color: #f0ede9;
 }
 
 /* Unicode character for "plus" sign (+) */
