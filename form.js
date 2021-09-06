@@ -109,9 +109,6 @@ let getQuote = document.querySelector('.get-quote')
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
-  const body = document.getElementById('body');
-  body.classList.add('glass');
-
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -132,8 +129,7 @@ window.onclick = function(event) {
 }
 
 // when user clicks on Okay, close it
-let okay = document.querySelector('.okay')
-
+let okay = document.querySelector('.okay');
 
 okay.onclick = function() {
   modal.style.display = "none";

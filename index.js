@@ -9,9 +9,7 @@ let width = window.innerWidth;
 setInterval(() => {
   if (width < 768){
   phone.classList.remove('mn-phone');
-  email.classList.remove('mn-email');
 }
-
 }, 2000);
 
 
