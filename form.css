@@ -71,12 +71,12 @@ input {
 	color: #d95531;
 	background-color: white;
 	float: right;
-  border: 1px solid #d95531;
+	border: 1px solid #d95531;
 }
 
 .back-btn:hover {
 	color: #e7927a;
-  border: 1px solid #ecaa98;
+	border: 1px solid #ecaa98;
 }
 
 /* modal code */
@@ -290,6 +290,41 @@ form label {
 	border: 1px solid #d95531 !important;
 }
 
-/* #page-2 {
-	width: 100vw;
-} */
+.big-bar {
+	height: 10px;
+	background-color: #f0ede9;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.small-bar-1 {
+	height: 10px;
+	background-color: #d95531;
+	width: 25%;
+	border-radius: 4px;
+	float: left;
+}
+
+.small-bar-2 {
+	height: 10px;
+	background-color: #d95531;
+	width: 50%;
+	border-radius: 4px;
+	float: left;
+}
+
+.small-bar-3 {
+	height: 10px;
+	background-color: #d95531;
+	width: 75%;
+	border-radius: 4px;
+	float: left;
+}
+
+.small-bar-4 {
+	height: 10px;
+	background-color: #d95531;
+	width: 90%;
+	border-radius: 4px;
+	float: left;
+}
