@@ -26,6 +26,13 @@
 }
 
 .byk-text {
+	align-self: center;
+}
+
+.byk-text p {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: Inter;
 }
 
 @media (min-width: 844px) {
