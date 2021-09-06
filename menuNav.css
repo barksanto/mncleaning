@@ -40,6 +40,10 @@
 	.byk-text {
 		display: none;
 	}
+
+  #logo{
+    width: 100px;
+  }
 }
 
 .book {
