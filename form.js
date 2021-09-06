@@ -4,6 +4,7 @@
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("my-form-status");
+      
       var data = new FormData(event.target); 
 
       // console.log(data)
@@ -90,7 +91,7 @@ function checkPage(){
 }
 }
 
-let testSubmit = document.querySelector('#test-submit');
+
 
 
 
@@ -108,6 +109,9 @@ let getQuote = document.querySelector('.get-quote')
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+  const body = document.getElementById('body');
+  body.classList.add('glass');
+
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -129,6 +133,7 @@ window.onclick = function(event) {
 
 // when user clicks on Okay, close it
 let okay = document.querySelector('.okay')
+
 
 okay.onclick = function() {
   modal.style.display = "none";
