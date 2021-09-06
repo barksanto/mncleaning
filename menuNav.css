@@ -17,11 +17,12 @@
 }
 
 .book-clean {
-	/* width: 100vw !important; */
+	width: 100vw !important;
+	max-width: none !important;
 }
 
 .make-full {
-	width: 100vw;
+	width: 100vw !important;
 }
 
 .byk-text {
@@ -41,9 +42,9 @@
 		display: none;
 	}
 
-  #logo{
-    width: 100px;
-  }
+	#logo {
+		width: 100px;
+	}
 }
 
 .book {
@@ -113,6 +114,7 @@ dl ol li {
 	color: #41342b;
 	height: 40px;
 	width: 40px;
+	margin-left: 15px;
 }
 
 li a {

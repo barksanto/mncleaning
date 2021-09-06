@@ -1,7 +1,7 @@
 #contact-form {
 	padding: 15px;
 	margin-top: 20px;
-	border: 2px solid #f3e7db;
+	/* border: 2px solid #f3e7db; */
 	margin: 0 50vw;
 }
 
@@ -13,10 +13,14 @@
 	font-weight: normal;
 }
 
+#contact-form input {
+	border: 1px solid gray;
+}
+
 #contact-form-button {
 	color: white;
 	background-color: #d95531;
-	padding: 5px 10px;
+	padding: 10px 16px;
 	border-radius: 5px;
 	border: none;
 }

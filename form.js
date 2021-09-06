@@ -64,7 +64,6 @@ backBtns.forEach(btn => {
 })
 })
 
-
 function checkPage(){
   switch(formPageCount) {
   case 1:
@@ -90,9 +89,6 @@ function checkPage(){
     break;
 }
 }
-
-
-
 
 
 // modal code
