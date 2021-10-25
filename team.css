@@ -1,5 +1,15 @@
-.member {
-	width: 150px;
-	height: 150px;
+.member2 {
+	width: 200px;
+	height: 250px;
 	object-fit: contain;
+}
+
+.member1 {
+	width: 200px;
+	height: 250px;
+  object-fit: contain;
+}
+
+.team-member{
+  font-size: 1.4rem;
 }
