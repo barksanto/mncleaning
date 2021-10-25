@@ -213,7 +213,8 @@ ul.big-nav {
 
 .call-icon {
 	color: #d95531;
-	padding-left: 5px;
+  padding-bottom: 7px;
+  padding-top: 3px;
 }
 
 .call-us {
