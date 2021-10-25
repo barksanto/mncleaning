@@ -345,3 +345,23 @@ form label {
 	border-radius: 4px;
 	float: left;
 }
+
+.myBtn {
+	border-radius: 5px;
+	background-color: #d95531;
+	font-size: 17px;
+	color: white;
+	margin-top: 5px;
+	max-width: 125px;
+	min-width: 60px;
+	width: 100%;
+	padding: 10px;
+	box-shadow: none;
+}
+
+.myBtn:hover {
+	background-color: #e0765a;
+	font-size: 0.9em;
+
+	padding: 12px;
+}
