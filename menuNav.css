@@ -240,10 +240,13 @@ ul.big-nav {
 	text-decoration: none;
 	border-radius: 25px;
 	transition: background-color 0.3s ease, color 0.3s ease;
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
 }
 
 .leave-review-btn:hover {
-	background-color: #007bff;
+	background-color: #4098f5;
 	color: white;
 	text-decoration: none;
 }
