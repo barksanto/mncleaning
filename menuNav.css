@@ -214,23 +214,36 @@ ul.big-nav {
 .call-icon2 {
 	color: #d95531;
 	padding-left: 5px;
-  padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .call-icon {
 	color: #d95531;
-  padding-bottom: 7px;
-  padding-top: 3px;
+	padding-bottom: 7px;
+	padding-top: 3px;
 }
 
 .call-us {
-	border: 2px solid #d95531;
+	border: 2px solid #d95531 !important;
 	border-radius: 5px;
-	/* padding: 8px 10px; */
-	padding: 5px;
-	width: 100px;
+	padding: 10px;
+}
+.call-us:hover {
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
 }
 
-.call-us a {
-	color: #d95531;
+.leave-review-btn {
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	border-radius: 25px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leave-review-btn:hover {
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
 }
