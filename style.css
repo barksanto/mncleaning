@@ -361,15 +361,22 @@ select:focus {
 
 .nav-link {
 	font-weight: 600;
-	color: var(--gray-700) !important;
+	color: #333333 !important;
 	transition: var(--transition);
 	padding: 0.5rem 1rem !important;
 	border-radius: var(--border-radius);
+	text-decoration: none;
 }
 
 .nav-link:hover {
 	color: var(--primary-color) !important;
-	background-color: var(--gray-100);
+	background-color: rgba(217, 85, 49, 0.1);
+	text-decoration: none;
+}
+
+.nav-link:active {
+	color: var(--primary-color) !important;
+	background-color: rgba(217, 85, 49, 0.2);
 }
 
 /* Testimonials */

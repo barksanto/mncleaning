@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (scrollTop > 100) {
 			navbar.classList.add("scrolled")
 		} else {
-			navbar.classList.remove("scrolled")
+			// navbar.classList.remove("scrolled")
 		}
 
 		lastScrollTop = scrollTop

@@ -737,29 +737,3 @@
 		border-width: 2px;
 	}
 }
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-	.form-control,
-	.form-select {
-		background-color: var(--gray-800);
-		border-color: var(--gray-600);
-		color: var(--white);
-	}
-
-	.form-control:focus,
-	.form-select:focus {
-		background-color: var(--gray-800);
-	}
-
-	.option-card {
-		background-color: var(--gray-800);
-		border-color: var(--gray-600);
-	}
-
-	.form-check-label {
-		background-color: var(--gray-800);
-		border-color: var(--gray-600);
-		color: var(--white);
-	}
-}
