@@ -61,7 +61,8 @@
 	padding: 1rem 1.25rem;
 	font-size: 1rem;
 	transition: all 0.3s ease;
-	background-color: var(--white);
+	background-color: #ffffff;
+	color: #333333;
 	width: 100%;
 }
 
@@ -70,6 +71,9 @@
 .form-select:focus {
 	transform: translateY(-2px);
 	box-shadow: 0 8px 25px rgba(217, 85, 49, 0.15);
+	border-color: var(--primary-color);
+	background-color: #ffffff;
+	color: #333333;
 }
 
 /* Quick selection cards for better UX */
@@ -436,6 +440,8 @@
 		border-width: 2px;
 		border-radius: 8px;
 		min-height: 48px; /* Touch-friendly minimum height */
+		background-color: #ffffff;
+		color: #333333;
 	}
 
 	.form-control-lg,

@@ -219,6 +219,22 @@ h6 {
 	padding: 0.75rem 1rem;
 	font-size: 1rem;
 	transition: var(--transition);
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.form-control:focus,
+.form-select:focus {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 0.2rem rgba(217, 85, 49, 0.25);
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+	color: #6c757d;
+	opacity: 1;
 }
 
 .form-control:focus,
@@ -311,7 +327,8 @@ h6 {
 /* Navigation */
 .navbar {
 	backdrop-filter: blur(10px);
-	background-color: rgba(255, 255, 255, 0.95) !important;
+	background-color: rgba(255, 255, 255, 0.98) !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {

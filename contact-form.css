@@ -15,6 +15,8 @@
 
 #contact-form input {
 	border: 1px solid gray;
+	background-color: #ffffff;
+	color: #333333;
 }
 
 #contact-form-button {
