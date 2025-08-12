@@ -140,15 +140,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Mobile menu close on link click
 	const mobileMenuLinks = document.querySelectorAll(".navbar-nav .nav-link")
 	const navbarCollapse = document.querySelector(".navbar-collapse")
-	const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false })
+	// Check if Bootstrap is loaded before using it
+	if (typeof bootstrap !== "undefined" && navbarCollapse) {
+		const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false })
 
-	mobileMenuLinks.forEach((link) => {
-		link.addEventListener("click", function () {
-			if (window.innerWidth < 992) {
-				bsCollapse.hide()
-			}
+		mobileMenuLinks.forEach((link) => {
+			link.addEventListener("click", function () {
+				if (window.innerWidth < 992) {
+					bsCollapse.hide()
+				}
+			})
 		})
-	})
+	}
 
 	// Add hover effects to cards
 	const cards = document.querySelectorAll(".card")
@@ -189,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Keyboard navigation support
 	document.addEventListener("keydown", function (e) {
 		// Escape key to close modals
-		if (e.key === "Escape") {
+		if (e.key === "Escape" && typeof bootstrap !== "undefined") {
 			const openModals = document.querySelectorAll(".modal.show")
 			openModals.forEach((modal) => {
 				const bsModal = bootstrap.Modal.getInstance(modal)

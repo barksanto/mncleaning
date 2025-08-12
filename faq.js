@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Add search functionality for FAQs
 	const faqSection = document.getElementById("faq")
 	if (faqSection) {
-		// Create search input
 		const searchContainer = document.createElement("div")
 		searchContainer.className = "mb-4"
 		searchContainer.innerHTML = `
