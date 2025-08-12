@@ -7,6 +7,25 @@
 	padding: 2rem;
 }
 
+/* CRITICAL: Force white background on all form inputs */
+#quote-form-element *[class*="form-control"],
+#quote-form-element *[class*="form-select"],
+#quote-form-element input,
+#quote-form-element textarea,
+#quote-form-element select {
+	background-color: #ffffff !important;
+	color: #333333 !important;
+}
+
+#quote-form-element *[class*="form-control"]:focus,
+#quote-form-element *[class*="form-select"]:focus,
+#quote-form-element input:focus,
+#quote-form-element textarea:focus,
+#quote-form-element select:focus {
+	background-color: #ffffff !important;
+	color: #333333 !important;
+}
+
 /* Form Container */
 .form-container {
 	max-width: 800px;
@@ -56,13 +75,13 @@
 /* Form Controls */
 .form-control,
 .form-select {
-	border: 2px solid var(--gray-200);
+	border: 2px solid var(--gray-200) !important;
 	border-radius: var(--border-radius);
 	padding: 1rem 1.25rem;
 	font-size: 1rem;
 	transition: all 0.3s ease;
-	background-color: #ffffff;
-	color: #333333;
+	background-color: #ffffff !important;
+	color: #333333 !important;
 	width: 100%;
 }
 
@@ -71,9 +90,9 @@
 .form-select:focus {
 	transform: translateY(-2px);
 	box-shadow: 0 8px 25px rgba(217, 85, 49, 0.15);
-	border-color: var(--primary-color);
-	background-color: #ffffff;
-	color: #333333;
+	border-color: var(--primary-color) !important;
+	background-color: #ffffff !important;
+	color: #333333 !important;
 }
 
 /* Quick selection cards for better UX */
@@ -440,8 +459,8 @@
 		border-width: 2px;
 		border-radius: 8px;
 		min-height: 48px; /* Touch-friendly minimum height */
-		background-color: #ffffff;
-		color: #333333;
+		background-color: #ffffff !important;
+		color: #333333 !important;
 	}
 
 	.form-control-lg,
