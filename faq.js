@@ -170,18 +170,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (faqSection) {
 		// faqSection.appendChild(helpfulnessContainer)
 
-		// Helpfulness tracking
-		document
-			.getElementById("helpfulYes")
-			.addEventListener("click", function () {
+		// Helpfulness tracking - only if buttons exist
+		const helpfulYes = document.getElementById("helpfulYes")
+		const helpfulNo = document.getElementById("helpfulNo")
+
+		if (helpfulYes) {
+			helpfulYes.addEventListener("click", function () {
 				trackHelpfulness("yes")
 				showFeedback("Thank you for your feedback!")
 			})
+		}
 
-		document.getElementById("helpfulNo").addEventListener("click", function () {
-			trackHelpfulness("no")
-			showFeedback("We'll work on improving our FAQ section.")
-		})
+		if (helpfulNo) {
+			helpfulNo.addEventListener("click", function () {
+				trackHelpfulness("no")
+				showFeedback("We'll work on improving our FAQ section.")
+			})
+		}
 	}
 
 	function trackHelpfulness(response) {
