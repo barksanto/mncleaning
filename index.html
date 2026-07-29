@@ -88,17 +88,8 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous" />
 
-		<!-- Custom CSS -->
+		<!-- Custom CSS (consolidated) -->
 		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./form.css" />
-		<link rel="stylesheet" href="./menuNav.css" />
-		<link rel="stylesheet" href="./whowhen.css" />
-		<link rel="stylesheet" href="./customers.css" />
-		<link rel="stylesheet" href="./angie.css" />
-		<link rel="stylesheet" href="./faq.css" />
-		<link rel="stylesheet" href="./team.css" />
-		<link rel="stylesheet" href="./contact.css" />
-		<link rel="stylesheet" href="./contact-form.css" />
 
 		<!-- Font Awesome -->
 		<link
@@ -109,7 +100,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
 			rel="stylesheet" />
 
 		<!-- Hotjar tracking code - Commented out due to loading issues -->
@@ -224,43 +215,47 @@
 		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<div class="container">
-				<a class="navbar-brand d-flex align-items-center" href="#">
+				<a class="navbar-brand" href="#home">
 					<img
 						src="./mn-logo.jpeg"
-						alt="M&N Cleaning - Professional House Cleaning Services Boston"
-						height="60"
-						class="me-3" />
-					<span class="d-none d-md-block fw-bold text-primary"
-						>Book your clean today</span
-					>
+						alt="M&N Cleaning logo"
+						width="48"
+						height="48" />
+					<span class="brand-name d-none d-sm-inline">M&N Cleaning</span>
 				</a>
 
 				<button
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav">
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
+					<ul class="navbar-nav ms-auto align-items-lg-center">
 						<li class="nav-item">
-							<a class="nav-link fw-semibold" href="#home">HOME</a>
+							<a class="nav-link" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-semibold" href="#services">SERVICES</a>
+							<a class="nav-link" href="#services">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-semibold" href="#faq">FAQ'S</a>
+							<a class="nav-link" href="#faq">FAQ</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-semibold" href="#team">THE TEAM</a>
+							<a class="nav-link" href="#team">The Team</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-semibold" href="#contact">CONTACT</a>
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+						<li class="nav-item d-none d-lg-block">
+							<a class="btn btn-primary nav-cta" href="#quote-form">Free Quote</a>
 						</li>
 					</ul>
 				</div>
@@ -268,374 +263,177 @@
 		</nav>
 
 		<!-- Hero Section -->
-		<section
-			id="home"
-			class="hero-section position-relative overflow-hidden"
-			role="banner">
-			<div class="hero-background"></div>
-			<div class="container position-relative">
-				<div class="row min-vh-75 align-items-center">
-					<div class="col-lg-6">
-						<div class="hero-content text-white">
-							<h1 class="display-4 fw-bold mb-4">
-								A <span class="text-warning">pristine</span> clean, on your
-								schedule
-							</h1>
-							<p class="lead mb-4">
-								Trusted by Boston families for over 20 years. Professional house
-								cleaning services in Boston, Malden, South Boston, Reading and
-								surrounding areas. Get your free quote today!
-							</p>
-							<div class="d-flex flex-wrap gap-3">
-								<a href="tel:6177190054" class="btn btn-primary btn-lg">
-									<i class="fas fa-phone me-2"></i>Call Or Text
-								</a>
-								<a href="#quote-form" class="btn btn-outline-light btn-lg">
-									<i class="fas fa-quote-left me-2"></i>Free Quote
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 d-none d-lg-block">
-						<div class="hero-image">
-							<img
-								src="https://res.cloudinary.com/duoknvbvs/image/upload/v1629642957/Image_8-22-21_at_9.35_AM_fsjnca.jpg"
-								alt="Clean home"
-								class="img-fluid rounded-3 shadow" />
-						</div>
+		<section id="home" class="hero-section" role="banner" aria-label="M&N Cleaning">
+			<div class="hero-media" aria-hidden="true">
+				<img
+					src="https://res.cloudinary.com/duoknvbvs/image/upload/v1629642957/Image_8-22-21_at_9.35_AM_fsjnca.jpg"
+					alt=""
+					width="1920"
+					height="1080"
+					fetchpriority="high" />
+			</div>
+			<div class="hero-overlay" aria-hidden="true"></div>
+			<div class="hero-inner">
+				<div class="container">
+					<h1 class="hero-brand">M&N Cleaning</h1>
+					<p class="hero-headline">A pristine clean, on your schedule</p>
+					<p class="hero-proof">
+						20+ years serving Boston, Malden, South Boston, Reading &amp;
+						surrounding areas.
+					</p>
+					<div class="hero-actions">
+						<a href="tel:6177190054" class="btn btn-primary btn-lg" data-track="cta_call">
+							<i class="fas fa-phone" aria-hidden="true"></i>Call or Text
+						</a>
+						<a href="#quote-form" class="btn btn-outline-light btn-lg" data-track="cta_quote">
+							Free Quote
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Quote Form Section -->
-		<section id="quote-form" class="py-4 py-lg-5 bg-light">
+		<section id="quote-form" class="py-5">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-lg-10 col-xl-8">
-						<div class="text-center mb-4 mb-lg-5">
-							<h2 class="display-5 fw-bold text-primary mb-3 fs-2 fs-md-1">
-								Get Your Free Quote
-							</h2>
-							<p class="lead text-muted fs-6 fs-md-5">
-								Tell us about your cleaning needs and we'll provide a
-								personalized quote
+					<div class="col-12 col-lg-8 col-xl-7">
+						<div class="section-head mb-4">
+							<h2 class="text-primary">Get Your Free Quote</h2>
+							<p>
+								Share a few details and we'll get back to you with a
+								personalized quote.
 							</p>
 						</div>
 
 						<form
-							netlify
 							id="quote-form-element"
 							action="https://formspree.io/f/myylngnk"
-							method="POST">
-							<!-- Progress Bar -->
-							<div class="progress mb-4" style="height: 8px">
-								<div
-									class="progress-bar bg-primary"
-									id="form-progress"
-									role="progressbar"
-									style="width: 33%"></div>
+							method="POST"
+							novalidate>
+							<!-- Honeypot spam trap -->
+							<div class="honeypot" aria-hidden="true">
+								<label for="website_url">Website</label>
+								<input
+									type="text"
+									id="website_url"
+									name="website_url"
+									tabindex="-1"
+									autocomplete="off" />
 							</div>
 
-							<!-- Step 1: Quick Contact Info -->
-							<div class="form-step" id="step-1">
-								<h4 class="mb-4 text-primary">
-									<i class="fas fa-user me-2"></i>Quick Contact Info
-								</h4>
-								<div class="row g-3">
-									<div class="col-12 col-md-6">
-										<label class="form-label fw-semibold">First Name *</label>
-										<input
-											type="text"
-											class="form-control form-control-lg"
-											name="first-name"
-											required />
-									</div>
-									<div class="col-12 col-md-6">
-										<label class="form-label fw-semibold">Last Name *</label>
-										<input
-											type="text"
-											class="form-control form-control-lg"
-											name="last-name"
-											required />
-									</div>
-									<div class="col-12 col-md-6">
-										<label class="form-label fw-semibold">Email *</label>
-										<input
-											type="email"
-											class="form-control form-control-lg"
-											name="email"
-											required />
-									</div>
-									<div class="col-12 col-md-6">
-										<label class="form-label fw-semibold">Phone Number</label>
-										<input
-											type="tel"
-											class="form-control form-control-lg"
-											name="phone" />
-									</div>
-									<div class="col-12 col-md-6">
-										<label class="form-label fw-semibold">Zip Code *</label>
-										<input
-											type="text"
-											class="form-control form-control-lg"
-											name="zip"
-											required />
-									</div>
+							<div class="row g-3">
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="first-name">First Name *</label>
+									<input
+										type="text"
+										class="form-control"
+										id="first-name"
+										name="first-name"
+										required
+										autocomplete="given-name" />
 								</div>
-							</div>
-
-							<!-- Step 2: Property & Cleaning Details -->
-							<div class="form-step d-none" id="step-2">
-								<h4 class="mb-4 text-primary">
-									<i class="fas fa-home me-2"></i>Property & Cleaning Details
-								</h4>
-								<div class="row g-4">
-									<!-- Property Details -->
-									<div class="col-12">
-										<h5 class="text-primary mb-3">Property Details</h5>
-										<div class="row g-3">
-											<div class="col-12 col-md-4">
-												<label class="form-label fw-semibold"
-													>Square Feet</label
-												>
-												<input
-													type="number"
-													class="form-control form-control-lg"
-													name="size"
-													placeholder="e.g., 1500" />
-											</div>
-											<div class="col-12 col-md-4">
-												<label class="form-label fw-semibold">Bedrooms</label>
-												<select
-													class="form-select form-select-lg"
-													name="bedrooms">
-													<option value="">Select</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5+">5+</option>
-												</select>
-											</div>
-											<div class="col-12 col-md-4">
-												<label class="form-label fw-semibold">Bathrooms</label>
-												<select
-													class="form-select form-select-lg"
-													name="bathrooms">
-													<option value="">Select</option>
-													<option value="1">1</option>
-													<option value="1.5">1.5</option>
-													<option value="2">2</option>
-													<option value="2.5">2.5</option>
-													<option value="3">3</option>
-													<option value="3+">3+</option>
-												</select>
-											</div>
-										</div>
-									</div>
-
-									<!-- Cleaning Preferences -->
-									<div class="col-12">
-										<h5 class="text-primary mb-3">Cleaning Preferences</h5>
-
-										<!-- Type of Clean -->
-										<div class="row g-3 mb-4">
-											<div class="col-12">
-												<label class="form-label fw-semibold"
-													>Type of Clean</label
-												>
-												<div class="row g-3">
-													<div class="col-12 col-md-6">
-														<div class="form-check form-check-lg">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="clean-type"
-																id="routine"
-																value="Routine clean" />
-															<label class="form-check-label" for="routine">
-																<i class="fas fa-calendar-week me-2"></i>Routine
-																Clean
-															</label>
-														</div>
-													</div>
-													<div class="col-12 col-md-6">
-														<div class="form-check form-check-lg">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="clean-type"
-																id="deep"
-																value="Deep clean" />
-															<label class="form-check-label" for="deep">
-																<i class="fas fa-sparkles me-2"></i>Deep Clean
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<!-- Frequency -->
-										<div class="row g-3">
-											<div class="col-12">
-												<label class="form-label fw-semibold">Frequency</label>
-												<div class="row g-3">
-													<div class="col-12 col-md-6">
-														<div class="form-check">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="frequency"
-																id="once"
-																value="One time" />
-															<label class="form-check-label" for="once"
-																>One Time</label
-															>
-														</div>
-													</div>
-													<div class="col-12 col-md-6">
-														<div class="form-check">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="frequency"
-																id="biweekly"
-																value="Every 2 weeks" />
-															<label class="form-check-label" for="biweekly"
-																>Bi-weekly</label
-															>
-														</div>
-													</div>
-													<div class="col-12 col-md-6">
-														<div class="form-check">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="frequency"
-																id="monthly"
-																value="Every 4 weeks" />
-															<label class="form-check-label" for="monthly"
-																>Monthly</label
-															>
-														</div>
-													</div>
-													<div class="col-12 col-md-6">
-														<div class="form-check">
-															<input
-																class="form-check-input"
-																type="radio"
-																name="frequency"
-																id="other"
-																value="Other" />
-															<label class="form-check-label" for="other"
-																>Other</label
-															>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="last-name">Last Name *</label>
+									<input
+										type="text"
+										class="form-control"
+										id="last-name"
+										name="last-name"
+										required
+										autocomplete="family-name" />
 								</div>
-							</div>
-
-							<!-- Step 3: Add-ons -->
-							<div class="form-step d-none" id="step-3">
-								<h4 class="mb-4 text-primary">
-									<i class="fas fa-plus-circle me-2"></i>Additional Services
-								</h4>
-								<div class="row g-3">
-									<div class="col-12 col-md-6">
-										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="checkbox"
-												name="addons"
-												id="fridge"
-												value="Fridge & Freezer" />
-											<label class="form-check-label" for="fridge">
-												<i class="fas fa-snowflake me-2"></i>Fridge & Freezer
-											</label>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="checkbox"
-												name="addons"
-												id="oven"
-												value="Oven & Stove" />
-											<label class="form-check-label" for="oven">
-												<i class="fas fa-fire me-2"></i>Oven & Stove
-											</label>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="checkbox"
-												name="addons"
-												id="windows"
-												value="Windows" />
-											<label class="form-check-label" for="windows">
-												<i class="fas fa-window-maximize me-2"></i>Windows
-											</label>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-check">
-											<input
-												class="form-check-input"
-												type="checkbox"
-												name="addons"
-												id="cabinets"
-												value="Cabinets" />
-											<label class="form-check-label" for="cabinets">
-												<i class="fas fa-door-open me-2"></i>Cabinets
-											</label>
-										</div>
-									</div>
-									<div class="col-12">
-										<label class="form-label fw-semibold"
-											>Special Requests</label
-										>
-										<textarea
-											class="form-control"
-											name="special-requests"
-											rows="3"
-											placeholder="Any other specific cleaning requests or notes..."></textarea>
-									</div>
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="email">Email *</label>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										name="email"
+										required
+										autocomplete="email" />
 								</div>
-							</div>
-
-							<!-- Navigation Buttons -->
-							<div class="form-navigation">
-								<button
-									type="button"
-									class="btn btn-outline-secondary"
-									id="prev-btn"
-									style="display: none">
-									<i class="fas fa-arrow-left me-2"></i>Previous
-								</button>
-								<button
-									type="button"
-									class="btn btn-primary btn-lg"
-									id="next-btn">
-									Next<i class="fas fa-arrow-right ms-2"></i>
-								</button>
-								<button
-									type="submit"
-									class="btn btn-success btn-lg"
-									id="submit-btn"
-									style="display: none">
-									<i class="fas fa-paper-plane me-2"></i>Submit Quote Request
-								</button>
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="phone">Phone *</label>
+									<input
+										type="tel"
+										class="form-control"
+										id="phone"
+										name="phone"
+										required
+										autocomplete="tel"
+										placeholder="(617) 555-0100" />
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="zip">Zip Code *</label>
+									<input
+										type="text"
+										class="form-control"
+										id="zip"
+										name="zip"
+										required
+										inputmode="numeric"
+										maxlength="5"
+										autocomplete="postal-code" />
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="form-label" for="service-type"
+										>Service Type *</label
+									>
+									<select
+										class="form-select"
+										id="service-type"
+										name="service-type"
+										required>
+										<option value="">Select a service</option>
+										<option value="Routine clean">Routine Clean</option>
+										<option value="Deep clean">Deep Clean</option>
+										<option value="Move-in / Move-out">
+											Move-in / Move-out
+										</option>
+										<option value="Office cleaning">Office Cleaning</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label class="form-label" for="notes"
+										>Anything else we should know?</label
+									>
+									<textarea
+										class="form-control"
+										id="notes"
+										name="notes"
+										rows="3"
+										placeholder="Optional — bedrooms, timing, special requests…"></textarea>
+								</div>
+								<div class="col-12">
+									<button
+										type="submit"
+										class="btn btn-primary btn-lg w-100"
+										id="submit-btn">
+										Submit Quote Request
+									</button>
+								</div>
 							</div>
 						</form>
+
+						<div
+							id="quote-success"
+							class="quote-success"
+							role="status"
+							aria-live="polite">
+							<div class="quote-success-icon" aria-hidden="true">
+								<i class="fas fa-check"></i>
+							</div>
+							<h3 class="text-primary mb-2">Thank you!</h3>
+							<p class="mb-3">
+								Your quote request is in. A member of our team will contact you
+								soon.
+							</p>
+							<a href="tel:6177190054" class="btn btn-primary" data-track="cta_call"
+								>Prefer to talk? Call or text 617-719-0054</a
+							>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -648,218 +446,96 @@
 			role="region"
 			aria-labelledby="services-heading">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 id="services-heading" class="display-5 fw-bold text-primary">
-						Professional House Cleaning Services in Boston
+				<div class="section-head">
+					<h2 id="services-heading" class="text-primary">
+						House Cleaning in Greater Boston
 					</h2>
-					<p class="lead text-muted">
-						Complete residential and office cleaning solutions
-					</p>
+					<p>Residential and office cleaning, built around your schedule.</p>
 				</div>
-				<div class="row g-4">
-					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center p-4">
-								<div
-									class="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-									<i class="fas fa-home fa-2x text-primary"></i>
-								</div>
-								<h3 class="card-title fw-bold h5">
-									House & Office Cleaning Services
-								</h3>
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Complete home
-										& office cleaning
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Deep carpet &
-										upholstery cleaning
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i
-										>Move-in/move-out deep cleaning
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i
-										>Post-construction cleanup
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Custom
-										cleaning packages
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center p-4">
-								<div
-									class="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-									<i class="fas fa-clock fa-2x text-primary"></i>
-								</div>
-								<h3 class="card-title fw-bold h5">
-									Flexible Scheduling Options
-								</h3>
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Same-day
-										booking available
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i
-										>Monday-Saturday, 7AM-7PM
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Flexible
-										scheduling to fit your life
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>One-time or
-										recurring service
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow-sm">
-							<div class="card-body text-center p-4">
-								<div
-									class="bg-primary bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-									<i class="fas fa-star fa-2x text-primary"></i>
-								</div>
-								<h3 class="card-title fw-bold h5">
-									Professional Quality Guarantee
-								</h3>
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>100%
-										satisfaction guaranteed
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Bonded &
-										insured professionals
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Eco-friendly
-										cleaning products
-									</li>
-									<li class="mb-2">
-										<i class="fas fa-check text-success me-2"></i>Detailed
-										attention to every corner
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+				<ul class="services-list">
+					<li>
+						<span class="svc-title">What we clean</span>
+						<p class="svc-desc">
+							Complete home &amp; office cleaning, deep carpet &amp; upholstery,
+							move-in/move-out, post-construction cleanup, and custom packages.
+						</p>
+					</li>
+					<li>
+						<span class="svc-title">When we work</span>
+						<p class="svc-desc">
+							Monday–Saturday, 7AM–7PM. Same-day booking when available — one-time
+							or recurring.
+						</p>
+					</li>
+					<li>
+						<span class="svc-title">How we work</span>
+						<p class="svc-desc">
+							Bonded &amp; insured, eco-friendly products, satisfaction guaranteed,
+							and careful attention to every corner.
+						</p>
+					</li>
+				</ul>
 			</div>
 		</section>
 
 		<!-- Testimonials Section -->
-		<section class="py-5 bg-light">
+		<section class="py-5 bg-light" aria-labelledby="reviews-heading">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 class="display-5 fw-bold text-primary">What Our Customers Say</h2>
-					<p class="lead text-muted">
-						See what our clients say about our cleaning services
-					</p>
+				<div class="section-head">
+					<h2 id="reviews-heading" class="text-primary">What Our Customers Say</h2>
+					<p>Real feedback from homes we’ve cleaned across Greater Boston.</p>
 				</div>
 				<div class="row g-4">
 					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow">
-							<div class="card-body p-4">
-								<div class="mb-3">
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-								</div>
-								<p class="card-text">
-									"I couldn't have been more impressed with M&N! Neilson was
+						<figure class="quote-card">
+							<div class="stars" aria-label="5 stars">★★★★★</div>
+							<blockquote>
+								<p>
+									“I couldn't have been more impressed with M&amp;N! Neilson was
 									incredibly responsive and a joy to work with. Our job was
-									complicated and he didn't mind at all - the attention to
-									detail and professionalism was exceptional."
+									complicated and he didn't mind at all — the attention to detail
+									and professionalism was exceptional.”
 								</p>
-								<div class="d-flex align-items-center">
-									<img
-										src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-										alt="Oscar Cambell"
-										class="rounded-circle me-3"
-										width="50"
-										height="50" />
-									<div>
-										<h6 class="mb-0 fw-bold">Oscar Cambell</h6>
-										<small class="text-muted">Malden, MA</small>
-									</div>
-								</div>
-							</div>
-						</div>
+							</blockquote>
+							<figcaption class="attribution">
+								Oscar Cambell
+								<span>Malden, MA</span>
+							</figcaption>
+						</figure>
 					</div>
 					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow">
-							<div class="card-body p-4">
-								<div class="mb-3">
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-								</div>
-								<p class="card-text">
-									"Neilson and Maria are very nice. They did a great job. They
-									cleaned my entire house: 2 bedrooms, livingroom, kitchen and
+						<figure class="quote-card">
+							<div class="stars" aria-label="5 stars">★★★★★</div>
+							<blockquote>
+								<p>
+									“Neilson and Maria are very nice. They did a great job. They
+									cleaned my entire house: 2 bedrooms, living room, kitchen and
 									bathroom. Polished my hardwood floors. Kitchen and bathroom
-									spotless."
+									spotless.”
 								</p>
-								<div class="d-flex align-items-center">
-									<img
-										src="https://kitt.lewagon.com/placeholder/users/cveneziani"
-										alt="Vicky Ladyents"
-										class="rounded-circle me-3"
-										width="50"
-										height="50" />
-									<div>
-										<h6 class="mb-0 fw-bold">Vicky Ladyents</h6>
-										<small class="text-muted">South Boston, MA</small>
-									</div>
-								</div>
-							</div>
-						</div>
+							</blockquote>
+							<figcaption class="attribution">
+								Vicky Ladyents
+								<span>South Boston, MA</span>
+							</figcaption>
+						</figure>
 					</div>
 					<div class="col-lg-4">
-						<div class="card h-100 border-0 shadow">
-							<div class="card-body p-4">
-								<div class="mb-3">
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-									<i class="fas fa-star text-warning"></i>
-								</div>
-								<p class="card-text">
-									"Neilson and team are so friendly, professional, and thorough!
+						<figure class="quote-card">
+							<div class="stars" aria-label="5 stars">★★★★★</div>
+							<blockquote>
+								<p>
+									“Neilson and team are so friendly, professional, and thorough!
 									It's so great to come home to everything not only cleaned
-									perfectly but neatly organized as well. It feels like I'm
-									living in a hotel."
+									perfectly but neatly organized as well. It feels like I'm living
+									in a hotel.”
 								</p>
-								<div class="d-flex align-items-center">
-									<img
-										src="https://images.unsplash.com/photo-1567336273898-ebbf9eb3c3bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbnxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-										alt="Julia Won"
-										class="rounded-circle me-3"
-										width="50"
-										height="50" />
-									<div>
-										<h6 class="mb-0 fw-bold">Julia Won</h6>
-										<small class="text-muted">Reading, MA</small>
-									</div>
-								</div>
-							</div>
-						</div>
+							</blockquote>
+							<figcaption class="attribution">
+								Julia Won
+								<span>Reading, MA</span>
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
@@ -868,13 +544,9 @@
 		<!-- FAQ Section -->
 		<section id="faq" class="py-5">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 class="display-5 fw-bold text-primary">
-						Frequently Asked Questions
-					</h2>
-					<p class="lead text-muted">
-						Everything you need to know about our cleaning services
-					</p>
+				<div class="section-head">
+					<h2 class="text-primary">Frequently Asked Questions</h2>
+					<p>Everything you need to know about our cleaning services.</p>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
@@ -993,160 +665,63 @@
 		<!-- Team Section -->
 		<section id="team" class="py-5 bg-light">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 class="display-5 fw-bold text-primary">Meet the Team</h2>
-					<p class="lead text-muted">
-						The dedicated professionals behind M&N Cleaning
-					</p>
+				<div class="section-head">
+					<h2 class="text-primary">Meet the Team</h2>
+					<p>The dedicated professionals behind M&amp;N Cleaning.</p>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-8">
-						<div class="row g-4">
-							<div class="col-md-6">
-								<div class="card border-0 shadow text-center">
-									<div class="card-body p-4">
-										<img
-											src="https://res.cloudinary.com/duj93wpnu/image/upload/v1635197654/70F13DB4-AE93-4EC0-9663-2CCD784328F0_4_5005_c_tskucr.jpg"
-											alt="Neilson Santo"
-											class="rounded-circle mb-3"
-											width="150"
-											height="150"
-											style="object-fit: cover" />
-										<h4 class="fw-bold text-primary">Neilson Santo</h4>
-										<p class="text-muted">Co-Founder & Lead Cleaner</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="card border-0 shadow text-center">
-									<div class="card-body p-4">
-										<img
-											src="https://res.cloudinary.com/duj93wpnu/image/upload/v1635186532/maria_grmlop.jpg"
-											alt="Maria Santo"
-											class="rounded-circle mb-3"
-											width="150"
-											height="150"
-											style="object-fit: cover" />
-										<h4 class="fw-bold text-primary">Maria Santo</h4>
-										<p class="text-muted">Co-Founder & Lead Cleaner</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="text-center mt-4">
-							<p class="lead">
-								We are the 'M' and the 'N' in M&N Cleaning. We have cleaned many
-								homes and offices and pride ourselves in taking care of all the
-								details. We look forward to helping you with your cleaning
-								needs.
-							</p>
-						</div>
+				<div class="team-grid mx-auto">
+					<div class="team-person">
+						<img
+							src="https://res.cloudinary.com/duj93wpnu/image/upload/v1635197654/70F13DB4-AE93-4EC0-9663-2CCD784328F0_4_5005_c_tskucr.jpg"
+							alt="Neilson Santo"
+							width="150"
+							height="150"
+							loading="lazy" />
+						<h3>Neilson Santo</h3>
+						<p class="role">Co-Founder &amp; Lead Cleaner</p>
+					</div>
+					<div class="team-person">
+						<img
+							src="https://res.cloudinary.com/duj93wpnu/image/upload/v1635186532/maria_grmlop.jpg"
+							alt="Maria Santo"
+							width="150"
+							height="150"
+							loading="lazy" />
+						<h3>Maria Santo</h3>
+						<p class="role">Co-Founder &amp; Lead Cleaner</p>
 					</div>
 				</div>
+				<p class="team-blurb">
+					We are the “M” and the “N” in M&amp;N Cleaning. We have cleaned many
+					homes and offices and pride ourselves in taking care of all the
+					details. We look forward to helping you with your cleaning needs.
+				</p>
 			</div>
 		</section>
 
 		<!-- Contact Section -->
 		<section id="contact" class="py-5">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 class="display-5 fw-bold text-primary">Get in Touch</h2>
-					<p class="lead text-muted">
-						Have a question or ready to book your clean? We'd love to hear from
-						you.
-					</p>
+				<div class="section-head">
+					<h2 class="text-primary">Get in Touch</h2>
+					<p>Ready to book? Call, text, or request a free quote.</p>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="row g-4 mb-5">
-							<div class="col-md-6 text-center">
-								<div class="card border-0 shadow-sm h-100">
-									<div class="card-body p-4">
-										<i class="fas fa-phone fa-2x text-primary mb-3"></i>
-										<h5 class="fw-bold">Call Or Text</h5>
-										<p class="mb-0">
-											<a href="tel:6177190054" class="text-decoration-none"
-												>617-719-0054</a
-											>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 text-center">
-								<div class="card border-0 shadow-sm h-100">
-									<div class="card-body p-4">
-										<i class="fas fa-envelope fa-2x text-primary mb-3"></i>
-										<h5 class="fw-bold">Email Us</h5>
-										<p class="mb-0">
-											<a
-												href="mailto:esmeralda9398@hotmail.com"
-												class="text-decoration-none"
-												>esmeralda9398@hotmail.com</a
-											>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- <div class="card border-0 shadow mx-auto" style="max-width: 600px">
-							<div class="card-body p-3 p-lg-4 p-xl-5">
-								<form
-									id="contact-form"
-									action="https://formspree.io/f/mvodvvqq"
-									method="POST">
-									<div class="row g-3">
-										<div class="col-12 col-md-6">
-											<label class="form-label fw-semibold">First Name</label>
-											<input
-												type="text"
-												class="form-control form-control-lg"
-												name="first-name"
-												required />
-										</div>
-										<div class="col-12 col-md-6">
-											<label class="form-label fw-semibold">Last Name</label>
-											<input
-												type="text"
-												class="form-control form-control-lg"
-												name="last-name"
-												required />
-										</div>
-										<div class="col-12 col-md-6">
-											<label class="form-label fw-semibold">Email</label>
-											<input
-												type="email"
-												class="form-control form-control-lg"
-												name="email"
-												required />
-										</div>
-										<div class="col-12 col-md-6">
-											<label class="form-label fw-semibold">Phone Number</label>
-											<input
-												type="tel"
-												class="form-control form-control-lg"
-												name="phone-number" />
-										</div>
-										<div class="col-12">
-											<label class="form-label fw-semibold">Message</label>
-											<textarea
-												class="form-control form-control-lg"
-												name="message"
-												rows="4"
-												placeholder="Tell us about your cleaning needs..."></textarea>
-										</div>
-										<div class="col-12 text-center">
-											<button
-												type="submit"
-												class="btn btn-primary btn-lg w-100 w-md-auto">
-												<i class="fas fa-paper-plane me-2"></i>Send Message
-											</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div> -->
+				<div class="contact-row">
+					<div class="contact-item">
+						<span class="label">Call or text</span>
+						<a href="tel:6177190054" data-track="cta_call">617-719-0054</a>
 					</div>
+					<div class="contact-item">
+						<span class="label">Email</span>
+						<a href="mailto:esmeralda9398@hotmail.com" data-track="cta_email"
+							>esmeralda9398@hotmail.com</a
+						>
+					</div>
+				</div>
+				<div class="contact-cta">
+					<a href="#quote-form" class="btn btn-primary btn-lg" data-track="cta_quote"
+						>Request a Free Quote</a
+					>
 				</div>
 			</div>
 		</section>
@@ -1159,10 +734,12 @@
 						<h5 class="fw-bold mb-3">Book Your Clean Today</h5>
 						<div
 							class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start">
-							<a href="tel:6177190054" class="btn btn-outline-light">
-								<i class="fas fa-phone me-2"></i>Call Or Text
+							<a href="tel:6177190054" class="btn btn-primary" data-track="cta_call">
+								<i class="fas fa-phone me-2" aria-hidden="true"></i>Call or Text
 							</a>
-							<a href="#quote-form" class="btn btn-outline-light">Free Quote</a>
+							<a href="#quote-form" class="btn btn-outline-light" data-track="cta_quote"
+								>Free Quote</a
+							>
 						</div>
 					</div>
 					<div class="col-lg-4 text-center">
@@ -1198,6 +775,17 @@
 			</div>
 		</footer>
 
+
+		<!-- Sticky mobile CTA -->
+		<div class="sticky-cta" role="region" aria-label="Quick contact">
+			<a href="tel:6177190054" class="btn btn-primary" data-track="cta_call_sticky"
+				><i class="fas fa-phone" aria-hidden="true"></i> Call</a
+			>
+			<a href="#quote-form" class="btn btn-outline-primary" data-track="cta_quote_sticky"
+				>Free Quote</a
+			>
+		</div>
+
 		<!-- Success Modal -->
 		<div class="modal fade" id="successModal" tabindex="-1">
 			<div class="modal-dialog modal-dialog-centered">
@@ -1232,7 +820,5 @@
 		<!-- Custom JS -->
 		<script src="./index.js"></script>
 		<script src="./form.js"></script>
-		<script src="./faq.js"></script>
-		<script src="./contact-form.js"></script>
 	</body>
 </html>
